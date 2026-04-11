@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# uv / venv
+.venv/
+.uv/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Generated palaces (don't commit test output)
+/output/

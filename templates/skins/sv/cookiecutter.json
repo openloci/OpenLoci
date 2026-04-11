@@ -1,0 +1,7 @@
+{
+  "palace_name": "my-sv-palace",
+  "skin": "sv",
+  "company_name": "Pied Piper",
+  "project_description": "A middle-out approach to knowledge management.",
+  "date": "{% now 'utc', '%Y-%m-%d' %}"
+}

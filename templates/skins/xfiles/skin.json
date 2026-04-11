@@ -1,0 +1,27 @@
+{
+  "name": "xfiles",
+  "description": "X-Files skin over the Clue chassis. The truth is out there.",
+  "chassis": "clue",
+  "game_type": "finite",
+  "rooms": "9 + Vestibule",
+  "room_map": [
+    {"clue": "Hall",         "name": "intake_hoover_corridor",   "prefix": "intake_", "function": "Routing, inboxes, intake"},
+    {"clue": "Study",        "name": "build_basement_office",    "prefix": "build_",  "function": "Active investigation, current work"},
+    {"clue": "Kitchen",      "name": "ops_lone_gunmen_bunker",   "prefix": "ops_",    "function": "Code, builds, infrastructure"},
+    {"clue": "Conservatory", "name": "collab_autopsy_bay",       "prefix": "collab_", "function": "Analysis, close reading, forensics"},
+    {"clue": "Lounge",       "name": "meet_skinners_office",     "prefix": "meet_",   "function": "PM, charters, decisions"},
+    {"clue": "Library",      "name": "think_xfiles_archive",     "prefix": "think_",  "function": "Research, references, memory palace"},
+    {"clue": "Billiard Room","name": "priv_smoking_room",        "prefix": "priv_",   "function": "Private deliberation, not ready to surface"},
+    {"clue": "Ballroom",     "name": "pitch_syndicate_boardroom","prefix": "pitch_",  "function": "Big picture, long arcs, BizDev"},
+    {"clue": "Dining Room",  "name": "retro_unremarkable_house", "prefix": "retro_",  "function": "Personal writing, origin material"},
+    {"clue": "Vestibule",    "name": "The Vestibule",            "prefix": "",        "function": "Global config, characters, rules (room 10)"}
+  ],
+  "characters": [
+    {"clue": "Miss Scarlett",  "skin": "Fox Mulder",              "prefix": "cro_", "role": "Chief Research Officer — investigation, hunches, deep intel"},
+    {"clue": "Colonel Mustard","skin": "Walter Skinner",          "prefix": "ceo_", "role": "CEO — strategic oversight, final sign-off, gatekeeper"},
+    {"clue": "Mrs. White",     "skin": "Dana Scully",             "prefix": "cto_", "role": "CTO — implementation, technical validation, material evidence"},
+    {"clue": "Mr. Green",      "skin": "The Lone Gunmen",         "prefix": "coo_", "role": "COO — ops, builds, infrastructure, social support"},
+    {"clue": "Mrs. Peacock",   "skin": "Alex Krycek",             "prefix": "cmo_", "role": "CMO — channel management, double-agent logistics, external liaisons"},
+    {"clue": "Professor Plum", "skin": "The Cigarette Smoking Man","prefix": "cso_", "role": "CSO — context & state, cross-modality persistence, the shadows"}
+  ]
+}

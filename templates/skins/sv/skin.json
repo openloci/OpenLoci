@@ -1,0 +1,27 @@
+{
+  "name": "sv",
+  "description": "Silicon Valley skin — Pied Piper in the Clue chassis. Not a bug, a pivot.",
+  "chassis": "clue",
+  "game_type": "finite",
+  "rooms": "9 + Vestibule",
+  "room_map": [
+    {"clue": "Hall",         "name": "intake_incubator_lobby",  "prefix": "intake_", "function": "Routing, intake, first impressions"},
+    {"clue": "Study",        "name": "build_garage",            "prefix": "build_",  "function": "Active dev, core product work"},
+    {"clue": "Kitchen",      "name": "ops_server_room",         "prefix": "ops_",    "function": "Infrastructure, DevOps, systems"},
+    {"clue": "Conservatory", "name": "collab_open_space",       "prefix": "collab_", "function": "Pair work, collaboration, standups"},
+    {"clue": "Lounge",       "name": "meet_conference_room",    "prefix": "meet_",   "function": "Decisions, charters, planning"},
+    {"clue": "Library",      "name": "think_whiteboard_room",   "prefix": "think_",  "function": "Research, design, specs"},
+    {"clue": "Billiard Room","name": "priv_stealth_mode",       "prefix": "priv_",   "function": "Sensitive strategy, not ready to surface"},
+    {"clue": "Ballroom",     "name": "pitch_sand_hill_road",    "prefix": "pitch_",  "function": "BizDev, fundraising, external relations"},
+    {"clue": "Dining Room",  "name": "social_rooftop",          "prefix": "social_", "function": "After-hours, decompression, retrospective"},
+    {"clue": "Vestibule",    "name": "The Vestibule",           "prefix": "",        "function": "Global config, characters, rules (room 10)"}
+  ],
+  "characters": [
+    {"clue": "Miss Scarlett", "skin": "Monica Hall",        "prefix": "coo_", "role": "COO — operations, execution, keeps the company alive"},
+    {"clue": "Col. Mustard",  "skin": "Gavin Belson",       "prefix": "ceo_", "role": "CEO — Hooli, antagonist-in-chief, strategic threat"},
+    {"clue": "Mrs. White",    "skin": "Laurie Bream",       "prefix": "clo_", "role": "CLO — legal, fiduciary, inscrutable poker face"},
+    {"clue": "Mr. Green",     "skin": "Richard Hendricks",  "prefix": "cpo_", "role": "CPO — product, founder, morally rigid, technically correct"},
+    {"clue": "Mrs. Peacock",  "skin": "Jared Dunn",         "prefix": "cpo_people_", "role": "Chief People Officer — emotional core, nobody notices"},
+    {"clue": "Prof. Plum",    "skin": "Erlich Bachman",     "prefix": "cro_", "role": "CRO — revenue, hustle, wrong about everything except occasionally"}
+  ]
+}

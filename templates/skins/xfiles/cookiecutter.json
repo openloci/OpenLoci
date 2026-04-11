@@ -1,0 +1,7 @@
+{
+  "palace_name": "my-xfiles-palace",
+  "skin": "xfiles",
+  "investigator_name": "Agent",
+  "project_description": "The truth is out there.",
+  "date": "{% now 'utc', '%Y-%m-%d' %}"
+}

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openloci"
+version = "0.1.0"
+description = "A filesystem-native memory palace generator for finite and infinite games"
+readme = "README.md"
+requires-python = ">=3.10"  # 3.11+ recommended for production
+license = { text = "MIT" }
+authors = [
+    { name = "Tinkerwitch", email = "jonah@bossewitch.net" }
+]
+keywords = ["memory-palace", "rpg", "cookiecutter", "knowledge-management"]
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    "cookiecutter>=2.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov",
+    "ruff",
+    "mypy",
+]
+
+[project.scripts]
+openloci = "openloci.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/nullspaceink/openloci"
+Repository = "https://github.com/nullspaceink/openloci"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openloci"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
