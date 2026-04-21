@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{/*
+  taxonomy.html — renders the terms overview for any palace taxonomy.
+  Used for /tags/, /palace-rooms/, /characters/, /phases/, /session-types/, etc.
+
+  Two views:
+    Cloud  — terms sized by post count (CSS font-size scale w1–w5)
+    List   — alphabetical, with count badge
+
+  Pill color is inferred from .Data.Plural to match the pill system.
+
+  Guard: if .Data.Terms is nil (e.g. term list pages falling through),
+  render an empty state rather than panicking.
+*/}}
+
+{{ $plural   := .Data.Plural }}
+{{ $singular := .Data.Singular }}
+
+{{ $pillClass := "tag" }}
+{{ if eq $plural "palace_rooms"   }}{{ $pillClass = "room"  }}
+{{ else if eq $plural "characters"    }}{{ $pillClass = "char"  }}
+{{ else if eq $plural "phases"        }}{{ $pillClass = "phase" }}
+{{ else if eq $plural "session_types" }}{{ $pillClass = "type"  }}
+{{ end }}
+
+<div class="taxonomy-page">
+  <header class="taxonomy-page__header">
+    <h1 class="taxonomy-page__title">{{ .Title }}</h1>
+  </header>
+
+  {{ with .Data.Terms }}
+  {{/* .Data.Terms is a Taxonomy (map). Store it for both ByCount and Alphabetical. */}}
+  {{ $byCount := .ByCount }}
+  {{ $byAlpha := .Alphabetical }}
+
+  <p class="taxonomy-page__count">{{ len $byCount }} {{ $singular }}{{ if gt (len $byCount) 1 }}s{{ end }}</p>
+
+  {{/* ── Cloud view ────────────────────────────────────────────────────── */}}
+  <section class="taxcloud" aria-label="{{ $plural }} cloud">
+    {{ $max := 1 }}
+    {{ range $byCount }}{{ if gt .Count $max }}{{ $max = .Count }}{{ end }}{{ end }}
+
+    {{ range $byCount }}
+    {{ $weight := div (mul .Count 4) $max | add 1 }}
+    <a href="{{ .Page.Permalink }}"
+       class="taxcloud__term taxcloud__term--w{{ $weight }} pill pill--{{ $pillClass }}"
+       title="{{ .Count }} post{{ if gt .Count 1 }}s{{ end }}">
+      {{ .Page.Title }}
+      <span class="taxcloud__count">{{ .Count }}</span>
+    </a>
+    {{ end }}
+  </section>
+
+  {{/* ── Alphabetical list ───────────────────────────────────────────── */}}
+  <section class="taxlist" aria-label="{{ $plural }} list">
+    <h2 class="taxlist__heading">All {{ $plural | humanize | title }}</h2>
+    <ol class="taxlist__items">
+      {{ range $byAlpha }}
+      <li class="taxlist__item">
+        <a href="{{ .Page.Permalink }}" class="taxlist__link">{{ .Page.Title }}</a>
+        <span class="taxlist__badge">{{ .Count }}</span>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+
+  {{ else }}
+  <p class="taxonomy-page__empty">No {{ $plural }} yet.</p>
+  {{ end }}
+
+</div>
+{{ end }}

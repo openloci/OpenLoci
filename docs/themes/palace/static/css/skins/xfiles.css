@@ -1,0 +1,74 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   Palace Journal — X-Files Skin
+   Federal blue, classified red, manila dossier paper.
+   For the Job Hunt palace (case files, investigations, field reports).
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Background: manila dossier */
+  --bg:          #f5f0e8;
+  --surface:     #ede8dc;
+  --text:        #1a1a1a;
+  --muted:       #5a5a6a;
+  --border:      #ccc5b5;
+
+  /* Links: federal blue */
+  --link:        #1a3a5c;
+  --link-hover:  #8b1a1a;
+  --accent:      #1a3a5c;
+
+  /* Taxonomy pills: dossier color-coding */
+  --pill-room-bg:    #dce6f0;
+  --pill-room-text:  #1a3a5c;   /* federal blue — rooms */
+  --pill-char-bg:    #f0e0e0;
+  --pill-char-text:  #8b1a1a;   /* classified red — characters */
+  --pill-phase-bg:   #e8e8d8;
+  --pill-phase-text: #4a4a2a;   /* olive — phases */
+  --pill-type-bg:    #e0ece8;
+  --pill-type-text:  #1a4a38;   /* bureau green — session types */
+
+  /* Hero band */
+  --hero-bg:     #0d1520;       /* deep federal dark */
+}
+
+/* Site header: thin red top-border accent */
+.site-header {
+  border-top: 3px solid #8b1a1a;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Nav links: mono, uppercase, very government */
+.site-nav {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.1em;
+}
+
+/* Footer: classified stamp aesthetic */
+.site-footer {
+  border-top: 1px solid var(--border);
+}
+.site-footer::before {
+  content: "— CASE FILES —";
+  display: block;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  color: #8b1a1a;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+
+/* Post content: typewriter code style */
+.post__content code {
+  color: #8b1a1a;
+  background: #ede8dc;
+}
+
+/* Blockquote: redacted bar */
+.post__content blockquote {
+  border-left-color: #8b1a1a;
+  background: #f0e8d8;
+  padding: 0.75rem 1rem;
+}

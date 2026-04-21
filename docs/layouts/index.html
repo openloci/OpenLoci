@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<!-- Hero band — text-only (no image yet; drop an image in static/images/ and add Params.hero.image to hugo.toml to enable) -->
+{{ with .Site.Params.hero.image }}
+<section class="hero-band hero-band--image">
+  <div class="hero-band__image-wrap">
+    <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="hero-band__image">
+    {{ with $.Site.Params.hero.quote }}
+    <div class="hero-band__quote-overlay">
+      <blockquote class="hero-quote">
+        <p>{{ . }}</p>
+        {{ with $.Site.Params.hero.quote_attribution }}
+        <cite>— {{ . }}</cite>
+        {{ end }}
+      </blockquote>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+<section class="hero-band">
+  <div class="hero-band__inner">
+    {{ with .Site.Params.hero.quote }}
+    <blockquote class="hero-quote" style="color: var(--accent); font-style: italic; font-size: 1.4rem; font-weight: 500; max-width: 640px; margin: 0 auto var(--space-m); border: none; padding: 0; text-align: center;">
+      <p style="color: #c8a0e8; margin-bottom: 0.5rem;">{{ . }}</p>
+      {{ with $.Site.Params.hero.quote_attribution }}
+      <cite style="color: #9b7ab5; font-style: normal; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase;">— {{ . }}</cite>
+      {{ end }}
+    </blockquote>
+    {{ end }}
+    <p class="hero-band__caption" style="margin-top: var(--space-m);">
+      <code style="background: rgba(255,255,255,0.08); color: #c8e8c0; padding: 0.3em 0.8em; border-radius: 3px; font-size: 1rem; letter-spacing: 0.05em;">pip install openloci</code>
+    </p>
+  </div>
+</section>
+{{ end }}
+
+<!-- Docs layout: prose content + sidebar -->
+<div class="home-layout">
+
+  <main class="home-posts">
+    <div class="page__content" style="max-width: 680px;">
+      {{ .Content }}
+    </div>
+  </main>
+
+  <aside class="home-sidebar">
+    {{ partial "sidebar.html" . }}
+  </aside>
+
+</div>
+
+{{ end }}

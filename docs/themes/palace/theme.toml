@@ -1,0 +1,7 @@
+name = "palace"
+license = "MIT"
+description = "A minimal serif theme for OpenLoci palace journals"
+homepage = "https://github.com/NullSpaceInk/OpenLoci"
+tags = ["blog", "journal", "lab-notebook", "minimal", "serif"]
+features = ["blog", "taxonomy"]
+min_version = "0.120.0"

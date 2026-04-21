@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Palace sigil">
+  <title>Palace Sigil</title>
+
+  <!-- Outer octagon — architectural linework -->
+  <polygon
+    points="35,8 85,8 112,35 112,85 85,112 35,112 8,85 8,35"
+    fill="none"
+    stroke="#1c1c2e"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner octagon — inset border -->
+  <polygon
+    points="39,16 81,16 104,39 104,81 81,104 39,104 16,81 16,39"
+    fill="none"
+    stroke="#1c1c2e"
+    stroke-width="1"
+    stroke-linejoin="round"
+    opacity="0.35"
+  />
+
+  <!-- Corner tick marks at each octagon vertex -->
+  <g stroke="#7b4fa6" stroke-width="1.5" opacity="0.7">
+    <line x1="35" y1="8"    x2="33" y2="5"  />
+    <line x1="85" y1="8"    x2="87" y2="5"  />
+    <line x1="112" y1="35"  x2="115" y2="33"/>
+    <line x1="112" y1="85"  x2="115" y2="87"/>
+    <line x1="85"  y1="112" x2="87"  y2="115"/>
+    <line x1="35"  y1="112" x2="33"  y2="115"/>
+    <line x1="8"   y1="85"  x2="5"   y2="87"/>
+    <line x1="8"   y1="35"  x2="5"   y2="33"/>
+  </g>
+
+  <!-- Center circle -->
+  <circle cx="60" cy="60" r="28" fill="none" stroke="#1c1c2e" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="60" cy="60" r="3"  fill="#7b4fa6" opacity="0.8"/>
+
+  <!-- "P" letterform — Garamond-style -->
+  <!-- Stem -->
+  <rect x="45" y="38" width="5" height="44" rx="0.5" fill="#1c1c2e"/>
+  <!-- Bowl -->
+  <path d="M50,38 Q76,38 76,51 Q76,64 50,64 Z" fill="#1c1c2e"/>
+  <!-- Bowl counter (parchment fill) -->
+  <path d="M53,43 Q69,43 69,51 Q69,59 53,59 Z" fill="#f8f7f2"/>
+
+  <!-- Crosshair registration marks -->
+  <g stroke="#1c1c2e" stroke-width="0.75" opacity="0.25">
+    <line x1="60" y1="2"   x2="60"  y2="12" />
+    <line x1="60" y1="108" x2="60"  y2="118"/>
+    <line x1="2"  y1="60"  x2="12"  y2="60" />
+    <line x1="108" y1="60" x2="118" y2="60" />
+  </g>
+</svg>

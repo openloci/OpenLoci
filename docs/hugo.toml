@@ -1,0 +1,92 @@
+baseURL      = "https://openloci.org/"
+languageCode = "en-us"
+theme        = "palace"
+
+title = "OpenLoci"
+
+[Params]
+  author = "Tinkrwitch"
+  motto  = "A filesystem-native memory palace generator for finite and infinite games."
+
+[Params.logo]
+  title       = "OpenLoci"
+  title_short = "OpenLoci"
+  subtitle    = "A filesystem-native memory palace for finite and infinite games."
+  image       = "images/palace-sigil.svg"
+
+[Params.hero]
+  quote             = "A finite game is played for the purpose of winning. An infinite game is played for the purpose of continuing the play."
+  quote_attribution = "James P. Carse, Finite and Infinite Games (1986)"
+
+[Params.site]
+  github = "https://github.com/openloci/OpenLoci"
+  pypi   = "https://pypi.org/project/openloci/"
+
+[Params.palace]
+  rooms_enabled = false
+  skin          = "default"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+# ── Navigation ───────────────────────────────────────────────────────────────
+[[menu.main]]
+  name   = "Overview"
+  url    = "/"
+  weight = 1
+[[menu.main]]
+  name   = "Quick Start"
+  url    = "/quick-start/"
+  weight = 2
+[[menu.main]]
+  name   = "Palace Structure"
+  url    = "/palace-structure/"
+  weight = 3
+[[menu.main]]
+  name   = "Skins"
+  url    = "/skins/"
+  weight = 4
+[[menu.main]]
+  name   = "Philosophy"
+  url    = "/philosophy/"
+  weight = 5
+[[menu.main]]
+  name   = "GitHub ↗"
+  url    = "https://github.com/openloci/OpenLoci"
+  weight = 6
+
+# ── Sidebar: docs nav ────────────────────────────────────────────────────────
+[[menu.sidebar]]
+  name   = "Overview"
+  url    = "/"
+  weight = 1
+[[menu.sidebar]]
+  name   = "Quick Start"
+  url    = "/quick-start/"
+  weight = 2
+[[menu.sidebar]]
+  name   = "Palace Structure"
+  url    = "/palace-structure/"
+  weight = 3
+[[menu.sidebar]]
+  name   = "Available Skins"
+  url    = "/skins/"
+  weight = 4
+[[menu.sidebar]]
+  name   = "Skin Authoring Guide"
+  url    = "/skins/authoring/"
+  weight = 5
+[[menu.sidebar]]
+  name   = "Philosophy"
+  url    = "/philosophy/"
+  weight = 6
+[[menu.sidebar]]
+  name   = "Contributing"
+  url    = "/contributing/"
+  weight = 7

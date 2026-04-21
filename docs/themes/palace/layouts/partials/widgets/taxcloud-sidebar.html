@@ -1,0 +1,37 @@
+{{/*
+  taxcloud-sidebar.html — compact taxonomy cloud for the sidebar.
+  Call with a dict:
+    {{ partial "widgets/taxcloud-sidebar.html" (dict "Site" .Site "taxPlural" "tags" "pillClass" "tag" "label" "Tags" "limit" 30) }}
+
+  taxPlural  — Hugo taxonomy plural key (e.g. "tags", "palace_rooms")
+  pillClass  — CSS pill modifier (tag, room, char, phase, type)
+  label      — display heading
+  limit      — max terms shown (sorted by count, desc)
+*/}}
+
+{{ $taxPlural := .taxPlural | default "tags" }}
+{{ $pillClass := .pillClass | default "tag" }}
+{{ $label     := .label     | default "Tags" }}
+{{ $limit     := .limit     | default 30 }}
+{{ $site      := .Site }}
+
+{{ $terms := index $site.Taxonomies $taxPlural }}
+{{ if $terms }}
+{{ $byCount := $terms.ByCount }}
+
+<div class="sidebar-taxcloud">
+  <h3 class="sidebar-heading">{{ $label }}</h3>
+  <div class="sidebar-taxcloud__pills">
+    {{ $max := 1 }}
+    {{ range $byCount }}{{ if gt .Count $max }}{{ $max = .Count }}{{ end }}{{ end }}
+
+    {{ range first $limit $byCount }}
+    {{ $weight := div (mul .Count 4) $max | add 1 }}
+    <a href="{{ .Page.Permalink }}"
+       class="pill pill--{{ $pillClass }} taxcloud__term taxcloud__term--w{{ $weight }}"
+       title="{{ .Count }} post{{ if gt .Count 1 }}s{{ end }}">{{ .Page.Title }}</a>
+    {{ end }}
+  </div>
+  <a href="{{ printf "/%s/" $taxPlural | relURL }}" class="sidebar-taxcloud__all">All {{ $label | lower }} &rarr;</a>
+</div>
+{{ end }}

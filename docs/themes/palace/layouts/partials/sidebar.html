@@ -1,0 +1,15 @@
+{{ partial "widgets/search.html" . }}
+
+<nav class="sidebar-nav" aria-label="Evergreen pages">
+  <h3 class="sidebar-heading">The Palace</h3>
+  {{ range .Site.Menus.sidebar }}
+  <a href="{{ .URL | relURL }}"
+     class="sidebar-link{{ if $.IsMenuCurrent "sidebar" . }} sidebar-link--active{{ end }}">
+    {{ .Name }}
+  </a>
+  {{ end }}
+</nav>
+
+{{ partial "widgets/taxcloud-sidebar.html" (dict "Site" .Site "taxPlural" "tags" "pillClass" "tag" "label" "Tags" "limit" 30) }}
+
+{{ partial "widgets/taxcloud-sidebar.html" (dict "Site" .Site "taxPlural" "palace_rooms" "pillClass" "room" "label" "Rooms" "limit" 9) }}

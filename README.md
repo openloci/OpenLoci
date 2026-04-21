@@ -83,7 +83,7 @@ Two parallel prefix systems make the palace self-documenting across any skin:
 ## Available Skins
 
 | Skin | Description |
-|------|-------------|
+| --- | --- |
 | `xfiles` | X-Files over the Clue chassis. Mulder, Scully, Skinner, CSM. |
 | `sv` | Silicon Valley. Pied Piper. Not a bug, a pivot. |
 | `jobhunt` | *(coming)* Job search as investigation. |
@@ -96,7 +96,7 @@ Community skins welcome. See [CONTRIBUTING](#contributing).
 ## The Stack
 
 | Layer | Technology | Function |
-|-------|-----------|----------|
+| --- | --- | --- |
 | Memory | Filesystem | The palace itself |
 | Protocol | YAML Frontmatter | Metadata, rules, routing |
 | Templating | [Cookiecutter](https://github.com/cookiecutter/cookiecutter) | Palace generation |

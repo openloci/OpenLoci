@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="post-list-wrap">
+  <h1 class="list-title">{{ .Title }}</h1>
+
+  <ol class="post-list" reversed>
+    {{ range .Paginator.Pages }}
+    <li class="post-list__item">
+      <article>
+        <h2 class="post-list__title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <div class="post-list__meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{ with .Params.palace_rooms }}
+          <span>{{ range . }}<span class="pill pill--room">{{ . }}</span>{{ end }}</span>
+          {{ end }}
+          {{ with .Params.categories }}
+          <span class="post-list__cats">
+            {{ range . }}<a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+          </span>
+          {{ end }}
+        </div>
+        {{ with .Summary }}
+        <p class="post-list__summary">{{ . | plainify | truncate 200 }}</p>
+        {{ end }}
+      </article>
+    </li>
+    {{ end }}
+  </ol>
+
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

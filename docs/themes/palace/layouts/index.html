@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+<!-- Hero band -->
+{{ with .Site.Params.hero.image }}
+<section class="hero-band hero-band--image">
+  <div class="hero-band__image-wrap">
+    <img src="{{ . | relURL }}"
+         alt="{{ $.Site.Title }}"
+         class="hero-band__image">
+    {{ with $.Site.Params.hero.quote }}
+    <div class="hero-band__quote-overlay">
+      <blockquote class="hero-quote">
+        <p>{{ . }}</p>
+        {{ with $.Site.Params.hero.quote_attribution }}
+        <cite>— {{ . }}</cite>
+        {{ end }}
+      </blockquote>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+<section class="hero-band">
+  <div class="hero-band__inner">
+    <h1 class="hero-band__title">{{ .Site.Params.logo.title | default .Site.Title }}</h1>
+    <p class="hero-band__caption">{{ .Site.Params.motto }}</p>
+  </div>
+</section>
+{{ end }}
+
+<!-- Home layout: post feed + sidebar -->
+<div class="home-layout">
+
+  <!-- Main: posts only, reverse chronological, paginated -->
+  <main class="home-posts">
+    <ol class="post-list" reversed>
+      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+      {{ range $paginator.Pages }}
+      <li class="post-list__item">
+        <article>
+          <h2 class="post-list__title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+          <div class="post-list__meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            {{ with .Params.palace_rooms }}
+            <span class="post-list__rooms">
+              {{ range . }}<span class="pill pill--room">{{ . }}</span>{{ end }}
+            </span>
+            {{ end }}
+            {{ with .Params.characters }}
+            <span class="post-list__chars">
+              {{ range . }}<span class="pill pill--char">{{ . }}</span>{{ end }}
+            </span>
+            {{ end }}
+            {{ with .Params.categories }}
+            <span class="post-list__cats">
+              {{ range . }}<a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+            </span>
+            {{ end }}
+          </div>
+          {{ with .Params.summary }}
+          <p class="post-list__summary">{{ . }}</p>
+          {{ else }}
+          {{ with .Summary }}
+          <p class="post-list__summary">{{ . | plainify | truncate 200 }}</p>
+          {{ end }}
+          {{ end }}
+        </article>
+      </li>
+      {{ end }}
+    </ol>
+    {{ template "_internal/pagination.html" . }}
+  </main>
+
+  <!-- Sidebar: evergreen pages -->
+  <aside class="home-sidebar">
+    {{ partial "sidebar.html" . }}
+  </aside>
+
+</div>
+{{ end }}

@@ -1,0 +1,27 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   Palace Journal — Default Skin
+   Gemstone palette. Warm parchment. Amethyst accent.
+   This is the base skin used when no skin param is set.
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --bg:          #f8f7f2;
+  --surface:     #f0ede4;
+  --text:        #1c1c2e;
+  --muted:       #6b6375;
+  --border:      #ddd8cc;
+  --link:        #7b4fa6;
+  --link-hover:  #c8842a;
+  --accent:      #7b4fa6;
+
+  --pill-room-bg:    #e8e0f4;
+  --pill-room-text:  #7b4fa6;
+  --pill-char-bg:    #ddf0e8;
+  --pill-char-text:  #2d6a4f;
+  --pill-phase-bg:   #fdf3e0;
+  --pill-phase-text: #c8842a;
+  --pill-type-bg:    #e0f0f5;
+  --pill-type-text:  #2a9d8f;
+
+  --hero-bg:     #0d0d14;
+}

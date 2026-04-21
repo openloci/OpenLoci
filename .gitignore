@@ -23,3 +23,7 @@ htmlcov/
 
 # Generated palaces (don't commit test output)
 /output/
+
+# Hugo build output
+docs/public/
+docs/resources/
