@@ -15,6 +15,7 @@ title = "OpenLoci"
   image       = "images/palace-sigil.svg"
 
 [Params.hero]
+  image             = "images/palace-banner.jpg"
   quote             = "A finite game is played for the purpose of winning. An infinite game is played for the purpose of continuing the play."
   quote_attribution = "James P. Carse, Finite and Infinite Games (1986)"
 
