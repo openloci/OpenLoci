@@ -59,9 +59,13 @@ title = "OpenLoci"
   url    = "/philosophy/"
   weight = 5
 [[menu.main]]
+  name   = "Contributing"
+  url    = "/contributing/"
+  weight = 6
+[[menu.main]]
   name   = "GitHub ↗"
   url    = "https://github.com/openloci/OpenLoci"
-  weight = 6
+  weight = 7
 
 # ── Sidebar: docs nav ────────────────────────────────────────────────────────
 [[menu.sidebar]]
@@ -77,7 +81,7 @@ title = "OpenLoci"
   url    = "/palace-structure/"
   weight = 3
 [[menu.sidebar]]
-  name   = "Available Skins"
+  name   = "Skins"
   url    = "/skins/"
   weight = 4
 [[menu.sidebar]]
