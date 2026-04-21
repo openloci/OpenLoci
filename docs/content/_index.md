@@ -3,11 +3,21 @@ title: "OpenLoci"
 description: "A filesystem-native memory palace generator for finite and infinite games."
 ---
 
+---
+
+## ⚠ OpenLoci is early software under active development. <br> &nbsp;&nbsp;&nbsp; Feedback welcome → [GitHub Issues](https://github.com/openloci/OpenLoci/issues)
+
+---
+
 ## What is OpenLoci?
 
 OpenLoci is a filesystem-native memory palace generator. It creates structured project environments — *palaces* — from plain text and directory hierarchies, using the [Method of Loci](https://en.wikipedia.org/wiki/Art_of_memory) as both metaphor and architecture.
 
-Every room is a directory. Every artifact is a markdown file. Every agent session leaves a trace.
+Every room is a directory. Every artifact is a markdown file. Every agent session leaves a trace. Your conversation with the agent is the walk thorugh space.
+
+OpenLoci values [Minimal Computing](https://go-dh.github.io/mincomp/about/) and is built on top of simple and stable technologies, such as file system directories and plain text files.  This simplicity is also platform agnostic, and OpenLoci is compatible with any Large Language Model that can access your filesystem.
+
+OpenLoci also ships with a Journal for regular blogging about your sessions, in short narrative form.   
 
 **For finite games** — bounded projects with clear outputs: a blog migration, a job hunt, an investigation. You win when the work is done.
 
@@ -15,13 +25,14 @@ Every room is a directory. Every artifact is a markdown file. Every agent sessio
 
 ---
 
-## The Chassis
+## The Tabernacle
 
-The structural skeleton is [Clue](https://en.wikipedia.org/wiki/Cluedo). Nine rooms. Six suspects. A mystery that may or may not have a solution. OpenLoci treats Clue as a *tabernacle* — a cosmology that defines sacred space whether or not it's physically instantiated. Skins change the cultural frame. The structure stays.
+The contemporary memory space utilized by OpenLoci is the Tudor Mansion from the board game [Clue](https://en.wikipedia.org/wiki/Cluedo). Nine rooms. Six suspects. A mystery that may or may not have a solution. OpenLoci treats Clue as a *tabernacle* — a cosmology that defines sacred space whether or not it's physically instantiated. Skins change the cultural frame. The structure stays.
 
 ```
 my-palace/
-├── The Vestibule/      ← global config, characters, rules
+├── Makefile            ← start here
+├── The Vestibule/      ← global config, characters, principles, Journal
 └── The Palace/
     ├── intake_*        ← routing, inboxes, triage
     ├── build_*         ← active work, deep focus
@@ -40,10 +51,11 @@ my-palace/
 
 | Skin | Description |
 |------|-------------|
+| `clue` | The original Clue. Prof. Plum, Col. Mustard, Ms. Scarlet. |
 | `xfiles` | X-Files over the Clue chassis. Mulder, Scully, Skinner, CSM. |
-| `sv` | Silicon Valley. Pied Piper. Not a bug, a pivot. |
-| `jobhunt` | *(coming)* Job search as investigation. |
-| `office` | *(coming)* Neutral physical office — works for any org. |
+| `siliconvalley` | Silicon Valley. Pied Piper. Not a bug, a pivot. |
+| `muppets` | The Muppets. Kermit, Piggy, Fozzie, Gonzo. It ain't easy being green. |
+| `digitalcircus` | The Amazing Digital Circus. Pomni, Caine, Jax, Ragatha. You know none of this is real, right? |
 
 Community skins are welcome. See the [Skin Authoring Guide](/skins/authoring/).
 
@@ -82,4 +94,4 @@ openloci new my-investigation --skin xfiles
 
 ---
 
-*GPL-3.0 · [github.com/mrenoch/OpenLoci](https://github.com/mrenoch/OpenLoci) · The palace is being built. ∃∞❤️*
+*GPL-3.0 · [github.com/openloci/OpenLoci](https://github.com/openloci/OpenLoci) · The palace is being built. ∃∞❤️*

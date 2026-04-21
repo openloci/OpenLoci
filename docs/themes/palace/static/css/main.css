@@ -590,6 +590,19 @@ hr {
   border-radius: 3px;
   color: var(--emerald);
 }
+.page__content pre {
+  background: var(--dragonstone);
+  color: #e8e4d9;
+  padding: var(--space-m);
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: var(--space-m);
+}
+.page__content pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
 .page__content blockquote {
   margin: var(--space-l) 0;
   padding: var(--space-s) var(--space-m);

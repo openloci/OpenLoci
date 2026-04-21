@@ -1,6 +1,6 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <p class="site-footer__motto"><em>{{ .Site.Params.motto | default "The truth is in the files." }}</em></p>
+    <p class="site-footer__motto"><em>{{ .Site.Params.footer | default "The truth is in the files." }}</em></p>
     <p class="site-footer__copy">© {{ now.Year }} {{ .Site.Params.author }} · <a href="{{ "/orientation/" | relURL }}">What is this?</a></p>
   </div>
 </footer>

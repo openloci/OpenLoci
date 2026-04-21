@@ -5,8 +5,9 @@ theme        = "palace"
 title = "OpenLoci"
 
 [Params]
-  author = "Tinkrwitch"
+  author = "Jonah Bossewitch"
   motto  = "A filesystem-native memory palace generator for finite and infinite games."
+  footer = "Memory is the treasury and guardian of all things. — Cicero"
 
 [Params.logo]
   title       = "OpenLoci"
