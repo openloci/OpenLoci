@@ -1,0 +1,27 @@
+{
+  "name": "clue",
+  "description": "The original Clue chassis. No overlay — just the Tudor mansion and its suspects.",
+  "chassis": "clue",
+  "game_type": "finite",
+  "rooms": "9 + Vestibule",
+  "room_map": [
+    {"clue": "Hall",          "name": "intake_hall",          "prefix": "intake_", "function": "Routing, inboxes, intake"},
+    {"clue": "Study",         "name": "build_study",          "prefix": "build_",  "function": "Active work, deep focus"},
+    {"clue": "Kitchen",       "name": "ops_kitchen",          "prefix": "ops_",    "function": "Infrastructure, systems, devops"},
+    {"clue": "Conservatory",  "name": "collab_conservatory",  "prefix": "collab_", "function": "Pair work, close analysis, collaboration"},
+    {"clue": "Lounge",        "name": "meet_lounge",          "prefix": "meet_",   "function": "Decisions, charters, PM"},
+    {"clue": "Library",       "name": "think_library",        "prefix": "think_",  "function": "Research, references, memory palace"},
+    {"clue": "Billiard Room", "name": "priv_billiard_room",   "prefix": "priv_",   "function": "Private deliberation, not ready to surface"},
+    {"clue": "Ballroom",      "name": "pitch_ballroom",       "prefix": "pitch_",  "function": "External relations, big picture, BizDev"},
+    {"clue": "Dining Room",   "name": "retro_dining_room",    "prefix": "retro_",  "function": "Retrospectives, personal writing, origin material"},
+    {"clue": "Vestibule",     "name": "The Vestibule",        "prefix": "",        "function": "Global config, characters, rules (room 10)"}
+  ],
+  "characters": [
+    {"clue": "Miss Scarlett",   "skin": "Miss Scarlett",   "prefix": "cro_", "role": "CRO — investigation lead, hunches, drives the case forward"},
+    {"clue": "Col. Mustard",    "skin": "Col. Mustard",    "prefix": "ceo_", "role": "CEO — strategic authority, final sign-off, military bearing"},
+    {"clue": "Mrs. White",      "skin": "Mrs. White",      "prefix": "cto_", "role": "CTO — implementation, household knowledge, sees everything"},
+    {"clue": "Mr. Green",       "skin": "Mr. Green",       "prefix": "coo_", "role": "COO — operations, moral compass, keeps the lights on"},
+    {"clue": "Mrs. Peacock",    "skin": "Mrs. Peacock",    "prefix": "cmo_", "role": "CMO — society connections, external liaisons, channel management"},
+    {"clue": "Prof. Plum",      "skin": "Prof. Plum",      "prefix": "cso_", "role": "CSO — context, long arcs, academic eccentricity, the shadows"}
+  ]
+}

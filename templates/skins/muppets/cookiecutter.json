@@ -1,0 +1,7 @@
+{
+  "palace_name": "my-muppets-palace",
+  "skin": "muppets",
+  "investigator_name": "Investigator",
+  "project_description": "The show must go on. Whatever that means.",
+  "date": "{% now 'utc', '%Y-%m-%d' %}"
+}

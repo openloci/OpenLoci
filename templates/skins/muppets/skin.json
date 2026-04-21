@@ -1,0 +1,27 @@
+{
+  "name": "muppets",
+  "description": "The Muppet Show over the Clue chassis. Kermit, Piggy, Fozzie, Gonzo. It ain't easy being green.",
+  "chassis": "clue",
+  "game_type": "infinite",
+  "rooms": "9 + Vestibule",
+  "room_map": [
+    {"clue": "Hall",          "name": "intake_stage_door",      "prefix": "intake_", "function": "Routing, intake, first impressions"},
+    {"clue": "Study",         "name": "build_kermits_office",   "prefix": "build_",  "function": "Active work, direction, the show must go on"},
+    {"clue": "Kitchen",       "name": "ops_backstage",          "prefix": "ops_",    "function": "Infrastructure, logistics, chaos management"},
+    {"clue": "Conservatory",  "name": "collab_orchestra_pit",   "prefix": "collab_", "function": "Pair work, rehearsal, ensemble effort"},
+    {"clue": "Lounge",        "name": "meet_green_room",        "prefix": "meet_",   "function": "Decisions, charters, pre-show prep"},
+    {"clue": "Library",       "name": "think_props_department", "prefix": "think_",  "function": "Research, references, the archive of bits"},
+    {"clue": "Billiard Room", "name": "priv_broom_closet",      "prefix": "priv_",   "function": "Private deliberation, things not ready for the stage"},
+    {"clue": "Ballroom",      "name": "pitch_the_stage",        "prefix": "pitch_",  "function": "External relations, performance, the big number"},
+    {"clue": "Dining Room",   "name": "retro_balcony",          "prefix": "retro_",  "function": "Retrospectives, commentary, Statler & Waldorf territory"},
+    {"clue": "Vestibule",     "name": "The Vestibule",          "prefix": "",        "function": "Global config, characters, rules (room 10)"}
+  ],
+  "characters": [
+    {"clue": "Miss Scarlett", "skin": "Kermit the Frog",    "prefix": "cro_", "role": "CRO — creative director, holds it together, it ain't easy"},
+    {"clue": "Col. Mustard",  "skin": "Miss Piggy",         "prefix": "ceo_", "role": "CEO — executive authority, diva energy, karate chop"},
+    {"clue": "Mrs. White",    "skin": "Fozzie Bear",        "prefix": "cto_", "role": "CTO — earnest implementation, wocka wocka, tries his best"},
+    {"clue": "Mr. Green",     "skin": "Gonzo",              "prefix": "coo_", "role": "COO — eccentric operations, whatever works, probably fine"},
+    {"clue": "Mrs. Peacock",  "skin": "Scooter",            "prefix": "cmo_", "role": "CMO — stage manager, logistics, external comms, go-fer"},
+    {"clue": "Prof. Plum",    "skin": "Statler & Waldorf",  "prefix": "cso_", "role": "CSO — commentary from the balcony, context, institutional memory"}
+  ]
+}

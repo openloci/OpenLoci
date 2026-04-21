@@ -1,0 +1,7 @@
+{
+  "palace_name": "my-clue-palace",
+  "skin": "clue",
+  "investigator_name": "Investigator",
+  "project_description": "A mystery in the Tudor mansion. The suspect is in the room.",
+  "date": "{% now 'utc', '%Y-%m-%d' %}"
+}

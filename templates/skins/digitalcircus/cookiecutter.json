@@ -1,0 +1,7 @@
+{
+  "palace_name": "my-digitalcircus-palace",
+  "skin": "digitalcircus",
+  "investigator_name": "Investigator",
+  "project_description": "You know none of this is real, right?",
+  "date": "{% now 'utc', '%Y-%m-%d' %}"
+}
