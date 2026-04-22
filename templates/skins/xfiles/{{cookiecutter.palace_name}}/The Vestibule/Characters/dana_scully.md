@@ -2,8 +2,7 @@
 title: Dana Scully
 character: dana-scully
 type: character
-role: cto_
-prefix: cto_
+role: CTO
 classification: x-file
 status: active
 agent: scully

@@ -2,8 +2,7 @@
 title: The Lone Gunmen
 character: the-lone-gunmen
 type: character
-role: coo_
-prefix: coo_
+role: COO
 classification: x-file
 status: active
 agent: lone-gunmen

@@ -2,8 +2,7 @@
 title: Ragatha
 character: ragatha
 type: character
-role: cto_
-prefix: cto_
+role: CTO
 c_suite_role: CTO
 classification: unclassified
 status: active

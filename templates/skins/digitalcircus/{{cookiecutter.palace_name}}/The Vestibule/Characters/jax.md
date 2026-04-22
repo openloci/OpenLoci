@@ -2,8 +2,7 @@
 title: Jax
 character: jax
 type: character
-role: cmo_
-prefix: cmo_
+role: CMO
 c_suite_role: CMO
 classification: unclassified
 status: active

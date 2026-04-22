@@ -2,8 +2,7 @@
 title: Deep Throat
 character: deep-throat
 type: character
-role: intel_
-prefix: intel_
+role: INTEL
 classification: classified
 status: archived
 agent: deep-throat

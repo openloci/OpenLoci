@@ -2,8 +2,7 @@
 title: The Ensemble (Dinesh & Gilfoyle)
 character_slug: the_ensemble
 type: character
-role: ensemble_
-prefix: cast_
+role: ENSEMBLE
 classification: unclassified
 status: active
 date: 2026-03-26

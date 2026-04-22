@@ -2,8 +2,7 @@
 title: Fox Mulder
 character: fox-mulder
 type: character
-role: cro_
-prefix: cro_
+role: CRO
 classification: x-file
 status: active
 agent: mulder

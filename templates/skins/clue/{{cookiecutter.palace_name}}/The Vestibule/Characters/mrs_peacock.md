@@ -2,8 +2,7 @@
 title: Mrs. Peacock
 character: mrs-peacock
 type: character
-role: cmo_
-prefix: cmo_
+role: CMO
 c_suite_role: CMO
 classification: unclassified
 status: active

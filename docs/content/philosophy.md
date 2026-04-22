@@ -36,7 +36,7 @@ A tabernacle, in the architectural sense, is a structure that defines sacred spa
 
 OpenLoci treats Clue this way. The nine rooms are not *really* the Study, the Kitchen, the Hall. They are functional archetypes: intake, build, ops, collab, meet, think, priv, pitch, retro. The Clue names are a mnemonic for the functions. The functions are what matter.
 
-Skins change the names and the atmosphere. The tabernacle structure — nine rooms, two zones (Vestibule and Palace), the prefix system — is invariant.
+Skins change the names and the atmosphere. The tabernacle structure — nine rooms, two zones (Vestibule and Palace), the room prefix system — is invariant.
 
 > *This framing emerged from a discussion of Todd Gitlin's use of Foucault's panopticon — another structure that defines a social order regardless of physical instantiation. The tabernacle is more apt here than "chassis" because it carries the implication of a portable cosmology.*
 

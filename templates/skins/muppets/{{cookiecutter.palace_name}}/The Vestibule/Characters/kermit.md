@@ -2,8 +2,7 @@
 title: Kermit the Frog
 character: kermit
 type: character
-role: cro_
-prefix: cro_
+role: CRO
 c_suite_role: CRO
 classification: unclassified
 status: active

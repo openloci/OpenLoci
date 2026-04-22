@@ -5,23 +5,97 @@
   "game_type": "finite",
   "rooms": "9 + Vestibule",
   "room_map": [
-    {"clue": "Hall",          "name": "intake_big_top_entrance", "prefix": "intake_", "function": "Routing, intake, where new arrivals land"},
-    {"clue": "Study",         "name": "build_control_room",      "prefix": "build_",  "function": "Active work, Caine's domain, where things are made"},
-    {"clue": "Kitchen",       "name": "ops_candy_workshop",      "prefix": "ops_",    "function": "Infrastructure, systems, the machinery of the circus"},
-    {"clue": "Conservatory",  "name": "collab_glitch_garden",    "prefix": "collab_", "function": "Pair work, collaboration, unpredictable terrain"},
-    {"clue": "Lounge",        "name": "meet_audience_seats",     "prefix": "meet_",   "function": "Decisions, charters, where watchers become participants"},
-    {"clue": "Library",       "name": "think_abstract_archive",  "prefix": "think_",  "function": "Research, memory, the records of who was here before"},
-    {"clue": "Billiard Room", "name": "priv_the_void",           "prefix": "priv_",   "function": "Private deliberation, abstraction risk, the unformed"},
-    {"clue": "Ballroom",      "name": "pitch_main_ring",         "prefix": "pitch_",  "function": "External relations, performance, the center of the show"},
-    {"clue": "Dining Room",   "name": "retro_break_room",        "prefix": "retro_",  "function": "Retrospectives, decompression, where masks come off"},
-    {"clue": "Vestibule",     "name": "The Vestibule",           "prefix": "",        "function": "Global config, characters, rules (room 10)"}
+    {
+      "clue": "Hall",
+      "name": "intake_big_top_entrance",
+      "prefix": "intake_",
+      "function": "Routing, intake, where new arrivals land"
+    },
+    {
+      "clue": "Study",
+      "name": "build_control_room",
+      "prefix": "build_",
+      "function": "Active work, Caine's domain, where things are made"
+    },
+    {
+      "clue": "Kitchen",
+      "name": "ops_candy_workshop",
+      "prefix": "ops_",
+      "function": "Infrastructure, systems, the machinery of the circus"
+    },
+    {
+      "clue": "Conservatory",
+      "name": "collab_glitch_garden",
+      "prefix": "collab_",
+      "function": "Pair work, collaboration, unpredictable terrain"
+    },
+    {
+      "clue": "Lounge",
+      "name": "meet_audience_seats",
+      "prefix": "meet_",
+      "function": "Decisions, charters, where watchers become participants"
+    },
+    {
+      "clue": "Library",
+      "name": "think_abstract_archive",
+      "prefix": "think_",
+      "function": "Research, memory, the records of who was here before"
+    },
+    {
+      "clue": "Billiard Room",
+      "name": "priv_the_void",
+      "prefix": "priv_",
+      "function": "Private deliberation, abstraction risk, the unformed"
+    },
+    {
+      "clue": "Ballroom",
+      "name": "pitch_main_ring",
+      "prefix": "pitch_",
+      "function": "External relations, performance, the center of the show"
+    },
+    {
+      "clue": "Dining Room",
+      "name": "retro_break_room",
+      "prefix": "retro_",
+      "function": "Retrospectives, decompression, where masks come off"
+    },
+    {
+      "clue": "Vestibule",
+      "name": "The Vestibule",
+      "prefix": "",
+      "function": "Global config, characters, rules (room 10)"
+    }
   ],
   "characters": [
-    {"clue": "Miss Scarlett", "skin": "Pomni",           "prefix": "cro_", "role": "CRO — the investigator, new arrival, anxious and perceptive"},
-    {"clue": "Col. Mustard",  "skin": "Caine",           "prefix": "ceo_", "role": "CEO — the AI ringmaster, runs the show, possibly omniscient"},
-    {"clue": "Mrs. White",    "skin": "Ragatha",         "prefix": "cto_", "role": "CTO — optimistic rag doll, holds things together, earnest implementation"},
-    {"clue": "Mr. Green",     "skin": "Kinger",          "prefix": "coo_", "role": "COO — paranoid chess piece, fortified ops, has seen too much"},
-    {"clue": "Mrs. Peacock",  "skin": "Jax",             "prefix": "cmo_", "role": "CMO — trickster rabbit, chaos agent, external mischief"},
-    {"clue": "Prof. Plum",    "skin": "Gangle",          "prefix": "cso_", "role": "CSO — comedy/tragedy, emotional memory, the weight of context"}
+    {
+      "clue": "Miss Scarlett",
+      "skin": "Pomni",
+      "role": "CRO \u2014 the investigator, new arrival, anxious and perceptive"
+    },
+    {
+      "clue": "Col. Mustard",
+      "skin": "Caine",
+      "role": "CEO \u2014 the AI ringmaster, runs the show, possibly omniscient"
+    },
+    {
+      "clue": "Mrs. White",
+      "skin": "Ragatha",
+      "role": "CTO \u2014 optimistic rag doll, holds things together, earnest implementation"
+    },
+    {
+      "clue": "Mr. Green",
+      "skin": "Kinger",
+      "role": "COO \u2014 paranoid chess piece, fortified ops, has seen too much"
+    },
+    {
+      "clue": "Mrs. Peacock",
+      "skin": "Jax",
+      "role": "CMO \u2014 trickster rabbit, chaos agent, external mischief"
+    },
+    {
+      "clue": "Prof. Plum",
+      "skin": "Gangle",
+      "role": "CSO \u2014 comedy/tragedy, emotional memory, the weight of context"
+    }
   ]
 }

@@ -2,8 +2,7 @@
 title: Laurie Bream
 character_slug: laurie_bream
 type: character
-role: clo_
-prefix: clo_
+role: CLO
 c_suite_role: CLO
 classification: unclassified
 status: active

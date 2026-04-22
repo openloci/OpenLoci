@@ -24,7 +24,7 @@ openloci new my-investigation --skin xfiles
 
 **Rooms:** Hoover Corridor (intake), Gunmen's Bunker (build), The Basement Office (think), ...
 
-**Characters:** `cro_fox_mulder`, `cto_dana_scully`, `ceo_walter_skinner`, `cso_cigarette_man`, `coo_lone_gunmen`, `cmo_alex_krycek`
+**Characters:** `fox_mulder`, `dana_scully`, `walter_skinner`, `cigarette_man`, `lone_gunmen`, `alex_krycek`
 
 ---
 
@@ -35,10 +35,10 @@ openloci new my-investigation --skin xfiles
 Richard Hendricks, Erlich Bachman, Monica Hall, Jared Dunn, Gavin Belson, Laurie Bream. Pied Piper. Middle-Out. The board is always watching.
 
 ```bash
-openloci new my-startup --skin sv
+openloci new my-startup --skin siliconvalley
 ```
 
-**Characters:** `cpo_richard_hendricks`, `cro_erlich_bachman`, `coo_monica_hall`, `cpo_people_jared_dunn`, `ceo_gavin_belson`, `clo_laurie_bream`
+**Characters:** `richard_hendricks`, `erlich_bachman`, `monica_hall`, `jared_dunn`, `gavin_belson`, `laurie_bream`
 
 ---
 
@@ -50,7 +50,7 @@ Job search as investigation. The case: finding the right role. Evidence: job pos
 
 ### `office` *(coming)*
 
-A neutral physical office — works for any organization or project that doesn't want a pop-culture frame. Clean prefixes, no IP.
+A neutral physical office — works for any organization or project that doesn't want a pop-culture frame. No IP.
 
 ---
 

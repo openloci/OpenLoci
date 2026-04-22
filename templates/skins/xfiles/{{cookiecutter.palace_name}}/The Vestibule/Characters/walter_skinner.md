@@ -2,8 +2,7 @@
 title: Walter Skinner
 character: walter-skinner
 type: character
-role: ceo_
-prefix: ceo_
+role: CEO
 classification: confidential
 status: active
 agent: skinner

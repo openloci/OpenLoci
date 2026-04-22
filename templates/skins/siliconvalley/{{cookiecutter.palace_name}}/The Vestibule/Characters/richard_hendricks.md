@@ -2,8 +2,7 @@
 title: Richard Hendricks
 character_slug: richard_hendricks
 type: character
-role: cpo_
-prefix: cpo_
+role: CPO
 c_suite_role: CPO
 classification: unclassified
 status: active

@@ -2,8 +2,7 @@
 title: Caine
 character: caine
 type: character
-role: ceo_
-prefix: ceo_
+role: CEO
 c_suite_role: CEO
 classification: unclassified
 status: active

@@ -2,8 +2,7 @@
 title: The Cigarette Smoking Man
 character: cigarette-smoking-man
 type: character
-role: cso_
-prefix: cso_
+role: CSO
 classification: classified
 status: active
 agent: csm

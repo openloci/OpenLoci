@@ -2,8 +2,7 @@
 title: Professor Plum
 character: prof-plum
 type: character
-role: cso_
-prefix: cso_
+role: CSO
 c_suite_role: CSO
 classification: unclassified
 status: active

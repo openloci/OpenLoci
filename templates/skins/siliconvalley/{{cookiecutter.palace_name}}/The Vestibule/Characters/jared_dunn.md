@@ -2,8 +2,7 @@
 title: Jared Dunn
 character_slug: jared_dunn
 type: character
-role: cpo_people_
-prefix: cpo_people_
+role: CPO
 c_suite_role: Chief People Officer
 classification: unclassified
 status: active

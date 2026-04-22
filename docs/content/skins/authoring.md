@@ -19,9 +19,8 @@ templates/skins/
         ├── The Vestibule/
         │   ├── README.md
         │   ├── Characters/
-        │   │   ├── ceo_{name}.md
-        │   │   ├── cro_{name}.md
-        │   │   ├── cto_{name}.md
+        │   │   ├── {character_name}.md
+        │   │   ├── {character_name}.md
         │   │   └── ...
         │   └── Rules/
         │       └── master_prompt.md
@@ -57,9 +56,9 @@ Defines the skin's identity, room names, and character roster.
     "retro":   "The Room Name (retro)"
   },
   "characters": [
-    { "prefix": "ceo", "name": "character_slug", "display": "Character Name", "role": "Role description" },
-    { "prefix": "cro", "name": "character_slug", "display": "Character Name", "role": "Role description" },
-    { "prefix": "cto", "name": "character_slug", "display": "Character Name", "role": "Role description" }
+    { "name": "character_slug", "display": "Character Name", "role": "Role description" },
+    { "name": "character_slug", "display": "Character Name", "role": "Role description" },
+    { "name": "character_slug", "display": "Character Name", "role": "Role description" }
   ]
 }
 ```
@@ -122,7 +121,6 @@ Each character file defines who the LLM is inhabiting when operating as that cha
 ```markdown
 ---
 title: "Character Name"
-prefix: cro
 role: "Chief Research Officer"
 skin: my-skin
 ---
@@ -167,9 +165,9 @@ templates/skins/xfiles/
 └── {{cookiecutter.palace_name}}/
     └── The Vestibule/
         ├── Characters/
-        │   ├── cro_fox_mulder.md
-        │   ├── cto_dana_scully.md
-        │   ├── ceo_walter_skinner.md
+        │   ├── fox_mulder.md
+        │   ├── dana_scully.md
+        │   ├── walter_skinner.md
         │   └── ...
         └── Rules/
             └── master_prompt.md

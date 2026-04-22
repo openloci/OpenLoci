@@ -51,22 +51,17 @@ Each room has a `README.md` with YAML frontmatter describing its purpose and atm
 
 ---
 
-## Character Prefixes
+## Characters
 
-**Character prefixes** — C-suite role labels that identify each character's function regardless of their name or skin.
+Characters are named by the character — no role prefix. The character's file, personality card, and role description speak for themselves.
 
-| Prefix | Role |
-|--------|------|
-| `ceo_` | Chief Executive Officer |
-| `cro_` | Chief Research Officer |
-| `cto_` | Chief Technology Officer |
-| `coo_` | Chief Operating Officer |
-| `cmo_` | Chief Marketing / Mission Officer |
-| `cso_` | Chief Strategy / Security Officer |
+| Skin | Example character files |
+|------|------------------------|
+| clue | `miss_scarlett.md`, `col_mustard.md`, `dana_scully.md` |
+| xfiles | `fox_mulder.md`, `dana_scully.md`, `cigarette_man.md` |
+| muppets | `kermit.md`, `miss_piggy.md`, `fozzie.md` |
 
-Example: `cro_fox_mulder.md` and `cro_erlich_bachman.md` are both Chief Research Officers wearing different skins.
-
-> **Note:** The C-suite prefix system is designed for org-like palaces. Solo or personal projects may prefer voice-based prefixes (`voice_skeptic`, `voice_archivist`) — this is an open design question.
+Each character file defines a role, personality, behavioral notes, and voice samples that an LLM can pick up and speak through. The role is described in the file — it doesn't need to be encoded in the filename.
 
 ---
 

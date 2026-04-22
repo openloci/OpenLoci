@@ -54,7 +54,7 @@ Every generated palace has two top-level directories:
 my-palace/
 ├── The Vestibule/          # Global config — the threshold before the palace
 │   ├── README.md           # Entry point. Read this first.
-│   ├── Characters/         # One file per character/agent (prefixed: cro_, cto_, ...)
+│   ├── Characters/         # One file per character/agent
 │   ├── Rooms/              # Room descriptions and atmosphere
 │   └── Rules/
 │       └── master_prompt.md  # DM instructions for LLM play
@@ -70,13 +70,11 @@ my-palace/
     └── retro_*/            # Retrospectives, personal writing
 ```
 
-### Prefix Conventions
-
-Two parallel prefix systems make the palace self-documenting across any skin:
+### Room Prefixes
 
 **Room prefixes** (`intake_`, `build_`, `ops_`, ...) — functional labels that survive skin changes. The room does what its prefix says regardless of whether it's called "The Basement Office" or "The Garage."
 
-**Character prefixes** (`ceo_`, `cro_`, `cto_`, ...) — C-suite role labels. `cro_fox_mulder.md` and `cro_erlich_bachman.md` are both Chief Research Officers wearing different skins.
+Characters are named by the character — `fox_mulder.md`, `dana_scully.md`, `kermit.md`. The role is described inside the file, not encoded in the filename.
 
 ---
 

@@ -2,8 +2,7 @@
 title: Alex Krycek
 character: alex-krycek
 type: character
-role: cmo_
-prefix: cmo_
+role: CMO
 classification: x-file
 status: active
 agent: krycek

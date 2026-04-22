@@ -2,8 +2,7 @@
 title: Mr. Green
 character: mr-green
 type: character
-role: coo_
-prefix: coo_
+role: COO
 c_suite_role: COO
 classification: unclassified
 status: active
