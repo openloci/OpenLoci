@@ -3,7 +3,7 @@
 > *"A finite game is played for the purpose of winning. An infinite game is played for the purpose of continuing the play."*
 > — James P. Carse, *Finite and Infinite Games* (1986)
 
-**OpenLoci** is a filesystem-native memory palace generator for finite and infinite games.
+**OpenLoci** is a filesystem-native collaborative Memory Palace for distributed cognition.
 
 It generates structured project environments — *palaces* — from plain text and directory hierarchies, using the Method of Loci as both metaphor and architecture. Every room is a directory. Every artifact is a markdown file. Every character is a card an agent can pick up and speak through.
 

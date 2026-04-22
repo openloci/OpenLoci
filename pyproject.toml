@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "openloci"
 version = "0.1.0"
-description = "A filesystem-native memory palace generator for finite and infinite games"
+description = "A filesystem-native collaborative Memory Palace for distributed cognition"
 readme = "README.md"
 requires-python = ">=3.10"  # 3.11+ recommended for production
 license = { text = "MIT" }

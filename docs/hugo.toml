@@ -6,13 +6,13 @@ title = "OpenLoci"
 
 [Params]
   author = "Jonah Bossewitch"
-  motto  = "A filesystem-native memory palace generator for finite and infinite games."
+  motto  = "A filesystem-native collaborative Memory Palace for distributed cognition."
   footer = "Memory is the treasury and guardian of all things. — Cicero"
 
 [Params.logo]
   title       = "OpenLoci"
   title_short = "OpenLoci"
-  subtitle    = "A filesystem-native memory palace for finite and infinite games."
+  subtitle    = "A filesystem-native collaborative Memory Palace for distributed cognition."
   image       = "images/palace-sigil.svg"
 
 [Params.hero]

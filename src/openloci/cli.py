@@ -1,5 +1,5 @@
 """
-OpenLoci CLI — Memory palace generator for finite and infinite games.
+OpenLoci CLI — A filesystem-native collaborative Memory Palace for distributed cognition.
 """
 
 from __future__ import annotations

@@ -1,6 +1,6 @@
 ---
 title: "OpenLoci"
-description: "A filesystem-native memory palace generator for finite and infinite games."
+description: "A filesystem-native collaborative Memory Palace for distributed cognition."
 ---
 
 ---
