@@ -24,7 +24,7 @@ The chassis is [Clue](https://en.wikipedia.org/wiki/Cluedo). Nine rooms. Six sus
 ## Quick Start
 
 ```bash
-# Install
+# Install (PyPI release coming — use dev install for now, see Development below)
 pip install openloci
 
 # Generate a new palace (base template)
@@ -32,7 +32,7 @@ openloci new my-project
 
 # Generate with a skin
 openloci new my-investigation --skin xfiles
-openloci new my-startup --skin sv
+openloci new my-startup --skin siliconvalley
 
 # List available skins
 openloci skins
@@ -116,20 +116,41 @@ A session that leaves no files did not happen. All significant outputs must be g
 
 ## Development
 
+All dev commands run from the **repo root** (`OpenLoci/`). Requires [uv](https://docs.astral.sh/uv/getting-started/installation/).
+
 ```bash
-# Clone and install
-git clone https://github.com/nullspaceink/openloci
-cd openloci
-uv venv && uv pip install -e ".[dev]"
+# 0. Install uv (once, system-wide — not per project)
+#    Mac/Linux:
+curl -LsSf https://astral.sh/uv/install.sh | sh
+#    Windows:
+winget install --id=astral-sh.uv
 
-# Run tests
-pytest tests/ -v
+# 1. Clone
+git clone https://github.com/openloci/OpenLoci
+cd OpenLoci
 
-# Run CLI
+# 2. Install the openloci CLI globally (run once after cloning)
+make install
+#    After this, 'openloci' is available in any terminal, no activation needed.
+
+# 3. Use it
 openloci --help
+openloci skins
+openloci new my-investigation --skin xfiles
+
+# 4. Install dev dependencies (for running tests and linting)
+make install-dev
+
+# 5. Run tests
+make test
+
+# 6. See all available make targets
+make
 ```
 
-Requires Python 3.11+. [uv](https://github.com/astral-sh/uv) recommended.
+`uv tool install --editable .` (what `make install` runs) installs the CLI into uv's managed tool store and wires it into your PATH — works on Mac, Linux, and Windows. The `--editable` flag means code changes are reflected immediately without reinstalling.
+
+Requires Python 3.10+.
 
 ---
 

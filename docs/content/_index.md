@@ -32,7 +32,11 @@ The contemporary memory space utilized by OpenLoci is the Tudor Mansion from the
 ```
 my-palace/
 ├── Makefile            ← start here
-├── The Vestibule/      ← global config, characters, principles, Journal
+├── The Vestibule/      
+|   ├── Global config   ← Master prompts, 
+|   ├── Characters      ← Agent profiles, prompts, personalities
+|   ├── Principles      ← Guidelines, Rules, Schemas and fixed vocabs
+|   ├── Journal         ← Daily Journal/Blog which serves as narrative glue of the project 
 └── The Palace/
     ├── intake_*        ← routing, inboxes, triage
     ├── build_*         ← active work, deep focus

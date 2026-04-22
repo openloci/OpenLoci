@@ -15,6 +15,10 @@ build/
 .coverage
 htmlcov/
 
+# Linting / type checking
+.ruff_cache/
+.mypy_cache/
+
 # Editors
 .DS_Store
 .idea/
