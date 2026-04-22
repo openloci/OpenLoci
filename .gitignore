@@ -31,3 +31,6 @@ htmlcov/
 # Hugo build output
 docs/public/
 docs/resources/
+
+# ignore claude artifacts
+.fuse_hidden*
