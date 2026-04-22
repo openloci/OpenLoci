@@ -56,7 +56,7 @@ my-palace/
 │   ├── README.md           # Entry point. Read this first.
 │   ├── Characters/         # One file per character/agent
 │   ├── Rooms/              # Room descriptions and atmosphere
-│   └── Rules/
+│   └── Principles/
 │       └── master_prompt.md  # DM instructions for LLM play
 └── The Palace/             # Nine rooms, prefixed by function
     ├── intake_*/           # Routing, inboxes, intake

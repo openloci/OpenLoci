@@ -12,7 +12,7 @@ my-palace/
 │   ├── README.md           ← entry point; read this first
 │   ├── Characters/         ← one file per character/agent
 │   ├── Rooms/              ← room descriptions and atmosphere
-│   ├── Rules/
+│   ├── Principles/
 │   │   └── master_prompt.md  ← DM instructions for LLM sessions
 │   └── Journal/            ← Hugo site for rendering session notes
 └── The Palace/             ← nine rooms, prefixed by function
@@ -73,7 +73,7 @@ The Vestibule is the threshold — the global configuration layer that sits outs
 
 **`Rooms/`** — Atmospheric descriptions of each room. Consulted when an agent "enters" a room to set tone and scope.
 
-**`Rules/master_prompt.md`** — The DM instructions. Loaded at the start of each session to orient the LLM to the palace, the active skin, the characters, and the session conventions.
+**`Principles/master_prompt.md`** — The DM instructions. Loaded at the start of each session to orient the LLM to the palace, the active skin, the characters, and the session conventions.
 
 **`Journal/`** — A Hugo site for rendering all palace session notes as a navigable, tagged web journal. Multi-taxonomy: rooms, characters, phases, session types. Runs locally with `hugo server`.
 
@@ -97,7 +97,7 @@ summary: "One-sentence summary of what happened."
 ---
 ```
 
-The `session_type`, `phase`, and `skin` vocabularies are defined in `The Vestibule/Rules/taxonomy.yaml` within each palace instance.
+The `session_type`, `phase`, and `skin` vocabularies are defined in `The Vestibule/Principles/taxonomy.yaml` within each palace instance.
 
 ---
 

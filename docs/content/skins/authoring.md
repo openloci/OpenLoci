@@ -22,7 +22,7 @@ templates/skins/
         │   │   ├── {character_name}.md
         │   │   ├── {character_name}.md
         │   │   └── ...
-        │   └── Rules/
+        │   └── Principles/
         │       └── master_prompt.md
         └── The Palace/
             ├── intake_{room-name}/
@@ -142,7 +142,7 @@ skin: my-skin
 
 ## `master_prompt.md`
 
-The `Rules/master_prompt.md` is loaded at the start of each session. It orients the LLM to:
+The `Principles/master_prompt.md` is loaded at the start of each session. It orients the LLM to:
 
 - The palace structure and conventions
 - The active skin and its cultural frame
@@ -169,7 +169,7 @@ templates/skins/xfiles/
         │   ├── dana_scully.md
         │   ├── walter_skinner.md
         │   └── ...
-        └── Rules/
+        └── Principles/
             └── master_prompt.md
 ```
 

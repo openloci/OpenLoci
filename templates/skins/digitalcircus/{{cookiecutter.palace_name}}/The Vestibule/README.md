@@ -47,7 +47,7 @@ The DM is the LLM. The player is the investigator. Abstraction risk is real. Kee
 
 ## To Begin a Session
 
-1. Read `Rules/master_prompt.md`
+1. Read `Principles/master_prompt.md`
 2. Read relevant character card(s) from `Characters/`
 3. Declare your starting room
 4. The DM opens the show

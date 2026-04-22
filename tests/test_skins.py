@@ -129,7 +129,7 @@ class TestTemplateStructure:
 
     def test_vestibule_has_master_prompt(self):
         for skin in list_skins():
-            assert (self._template_root(skin) / "The Vestibule" / "Rules" / "master_prompt.md").exists()
+            assert (self._template_root(skin) / "The Vestibule" / "Principles" / "master_prompt.md").exists()
 
     def test_vestibule_has_characters(self):
         for skin in list_skins():

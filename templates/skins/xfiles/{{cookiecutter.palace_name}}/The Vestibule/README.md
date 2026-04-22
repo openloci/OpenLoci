@@ -47,7 +47,7 @@ The DM is the LLM. The player is the investigator. The truth is out there.
 
 ## To Begin a Session
 
-1. Read `Rules/master_prompt.md`
+1. Read `Principles/master_prompt.md`
 2. Read relevant character card(s) from `Characters/`
 3. Declare your starting room
 4. The DM opens the case

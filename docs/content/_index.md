@@ -35,7 +35,7 @@ my-palace/
 ├── The Vestibule/      
 |   ├── Global config   ← Master prompts, 
 |   ├── Characters      ← Agent profiles, prompts, personalities
-|   ├── Principles      ← Guidelines, Rules, Schemas and fixed vocabs
+|   ├── Principles      ← Guidelines, Schemas, Schemas and fixed vocabs
 |   ├── Journal         ← Daily Journal/Blog which serves as narrative glue of the project 
 └── The Palace/
     ├── intake_*        ← routing, inboxes, triage
