@@ -58,6 +58,74 @@ The palace is not an index. It is an architecture.
 
 ---
 
+## Funes the Memorious
+
+Borges wrote the autopsy of total recall in 1942.
+
+Ireneo Funes gains perfect memory after an accident. Every moment, every perception, total fidelity. The result: he cannot abstract, cannot generalize, cannot act. *"My memory, sir, is like a garbage heap."* He dies young, crushed under the weight of perfect recall.
+
+Storage without synthesis is paralysis. The handoff memo is not a compromise — it is the right unit. Not the transcript. Not the log. The authored summary: what mattered, what connects, what comes next.
+
+Systems that store everything (verbatim transcripts, full conversation logs, raw embeddings) are optimized for retrieval at the cost of understanding. OpenLoci makes the opposite bet: sessions leave structured artifacts. The receipt, not the surveillance tape. Funes is the cautionary tale for every "store everything, search later" memory system.
+
+---
+
+## Brakhage and the Three Modes
+
+Stan Brakhage asked in *Metaphors on Vision* (1963): *"How many colors are there in a field of grass to the crawling baby unaware of 'Green'?"*
+
+Three cognitive modes, three memory systems:
+
+- **Raw transcript** — the baby's field of greens. Everything, undifferentiated, pre-linguistic richness that cannot be acted on.
+- **EMR checkbox / RAG fact extraction** — the adult's "Green." Coarsely named, actionable, but flattened. The synthesis that kills the particular.
+- **Narrative handoff memo** — Brakhage's film. Authored structure that recovers some of the richness *within* a form that can be communicated and acted on.
+
+The medium enables a different kind of fidelity than either extreme. This is why the palace argues not just against the EMR but acknowledges what it loses and what narrative recovers.
+
+---
+
+## Rita Charon and the Parallel Chart
+
+Rita Charon founded the Program in Narrative Medicine at Columbia. Key work: *Narrative Medicine: Honoring the Stories of Illness* (2006).
+
+The EMR replaced the physician's narrative case note with structured data fields — optimized for billing, specialist handoffs, insurance. Each specialist sees their subsystem perfectly; nobody sees the patient. You cannot reconstruct the whole person from the fields, because the narrative judgment — what connected to what, what changed, what mattered — was never captured.
+
+Charon's practice: the **parallel chart**. Physicians write a narrative account of the clinical encounter alongside the official EMR record. The official chart is for the system; the parallel chart is for understanding.
+
+This is exactly the OpenLoci model:
+- Git log = the official record (what happened, in sequence, auditable)
+- Handoff memo = the parallel chart (what mattered, what connects, what comes next)
+
+Both exist. Neither replaces the other. The palace is infrastructure for parallel charts at every scale.
+
+---
+
+## Captain's Log vs. Surveillance Log
+
+A Datadog APM trace tells you the engine is at 94% capacity. It does not tell you whether to turn around. The complete log has forensic value but not decision-making value.
+
+The captain's log is authored. Someone made a judgment about what mattered — not what happened to every process, but what the captain needed to know and decided to record. That judgment is the irreducible human contribution. It is also the thing that makes the log navigable by anyone who comes after.
+
+The Journal in OpenLoci is a captain's log, not a Datadog trace. The handoff memo is a captain's log. The palace grows through authored judgment, not comprehensive capture.
+
+---
+
+## Wampum Belts and the Living Record
+
+The Two Row Wampum — Gus-Wen-Tah — encodes the 1613 agreement between the Haudenosaunee and Dutch settlers. Two parallel rows of purple wampum on white: two vessels traveling the same river, each in their own lane, neither steering the other's canoe.
+
+This is not a *record* of the treaty. It *is* the treaty. When the Haudenosaunee hold up the Two Row Wampum and say it remains in effect, they are not citing a historical document. They are presenting the living agreement. The traces are not just the truth — the traces *are the agreement*, still active.
+
+This predates all our other examples by centuries and makes the argument cross-cultural. It also sharpens it: the belt is the official record, not a parallel chart running alongside one. There is no separate "real" agreement it describes.
+
+But the belt cannot be read in isolation. It is the mnemonic anchor for an oral tradition that travels alongside it. The belt without the ceremony, without the reader trained by the reader who was trained, is purple and white shells in a pattern. This is the Brakhage problem at the level of material culture: the medium requires its community of interpretation to be meaningful. Strip the community and you have data without context — which is precisely the EMR failure mode.
+
+The Navajo Code Talkers are the same argument from a different angle. The language was chosen as the cipher precisely because it could not be extracted from its community of speakers. No grammar existed in enemy intelligence files. The transmission network *was* the code. Knowledge that lives in a community of practice resists the kind of indexing that destroys it.
+
+OpenLoci, at some level, is an attempt to build the infrastructure for communities of practice — human and AI — to maintain living records rather than dead archives.
+
+---
+
 ## Prior Art
 
 - [mempalace](https://github.com/mempalace/mempalace) — LLM memory via palace metaphor; related but different approach
