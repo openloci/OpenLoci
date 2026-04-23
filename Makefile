@@ -4,7 +4,7 @@ BASE_URL = https://openloci.org/
 
 .DEFAULT_GOAL := help
 
-.PHONY: docs docs-build check-uv install install-dev test clean uninstall help
+.PHONY: docs docs-build check-uv check-hugo install install-dev test clean uninstall help
 
 check-uv: ## Verify uv is installed (required for all targets)
 	@command -v uv >/dev/null 2>&1 || { \
@@ -18,16 +18,26 @@ check-uv: ## Verify uv is installed (required for all targets)
 	}
 	@echo "  ✓  uv $$(uv --version)"
 
+check-hugo: ## Verify hugo is installed (required for journal/docs targets)
+	@command -v hugo >/dev/null 2>&1 || { \
+		echo ""; \
+		echo "  ✗  hugo is not installed."; \
+		echo "     Install it from: https://gohugo.io/installation/"; \
+		echo ""; \
+		exit 1; \
+	}
+	@echo "  ✓  hugo $$(hugo version | head -1)"
+
 install: check-uv ## Install openloci CLI globally via uv tool  [run once after cloning]
 	uv tool install --editable .
 
 install-dev: check-uv ## Install dev dependencies for running tests and linting
 	uv pip install -e ".[dev]"
 
-docs: check-uv ## Spin up the OpenLoci docs site locally (http://localhost:$(PORT))
+docs: check-hugo ## Spin up the OpenLoci docs site locally (http://localhost:$(PORT))
 	cd "$(DOCS)" && hugo server --watch --port $(PORT)
 
-docs-build: check-uv ## Build docs for deployment (sets baseURL to $(BASE_URL))
+docs-build: check-hugo ## Build docs for deployment (sets baseURL to $(BASE_URL))
 	cd "$(DOCS)" && hugo --minify --baseURL "$(BASE_URL)"
 
 test: check-uv ## Run OpenLoci test suite

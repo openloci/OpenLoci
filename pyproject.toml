@@ -8,11 +8,15 @@ version = "0.1.0"
 description = "A filesystem-native collaborative Memory Palace for distributed cognition"
 readme = "README.md"
 requires-python = ">=3.10"  # 3.11+ recommended for production
-license = { text = "MIT" }
-authors = [
-    { name = "Tinkerwitch", email = "jonah@bossewitch.net" }
+license = "GPL-3.0-or-later"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
 ]
-keywords = ["memory-palace", "rpg", "cookiecutter", "knowledge-management"]
+
+authors = [
+    { name = "Jonah Bossewitch, PhD", email = "jonah@bossewitch.net" }
+]
+keywords = ["memory-palace", "cookiecutter", "knowledge-management", "distributed-cognition", "LLM"]
 dependencies = [
     "typer>=0.12.0",
     "rich>=13.0.0",
@@ -31,8 +35,8 @@ dev = [
 openloci = "openloci.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/nullspaceink/openloci"
-Repository = "https://github.com/nullspaceink/openloci"
+Homepage = "https://openloci.org"
+Repository = "https://github.com/openloci/OpenLoci"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/openloci"]
