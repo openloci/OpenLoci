@@ -32,5 +32,8 @@ htmlcov/
 docs/public/
 docs/resources/
 
+# Temporary lock file while building
+/.hugo_build.lock
+
 # ignore claude artifacts
 .fuse_hidden*
