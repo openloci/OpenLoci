@@ -51,7 +51,7 @@ title = "OpenLoci"
   url    = "/#available-skins"
   weight = 3
 [[menu.main]]
-  name   = "The Talk"
+  name   = "The World Premiere"
   url    = "/#the-world-premiere"
   weight = 4
 [[menu.main]]
