@@ -98,4 +98,23 @@ openloci new my-investigation --skin xfiles
 
 ---
 
+## The World Premiere
+
+**OpenLoci** made its public debut at [NewHaven.io](https://www.meetup.com/newhavenio/) on April 23, 2026 — a lightning talk: *"Build Your Palace."*
+
+The deck covers the problem (AI agents have amnesia), the solution (Method of Loci, circa 500 BCE), the constraint (if a session leaves no traces, it didn't happen), and a live walkthrough of a palace in the wild.
+
+<object data="/newhavenio_jonahboss_openloci_20260423.pdf"
+        type="application/pdf"
+        width="100%" height="520px"
+        style="border: 1px solid #2a2a2a; border-radius: 4px; margin: 1rem 0;">
+  <a href="/newhavenio_jonahboss_openloci_20260423.pdf">Download slides (PDF) ↗</a>
+</object>
+
+<p style="font-size: 0.85em; color: #888;">
+  <a href="/newhavenio_jonahboss_openloci_20260423.pdf">Download slides (PDF) ↗</a>
+</p>
+
+---
+
 *GPL-3.0 · [github.com/openloci/OpenLoci](https://github.com/openloci/OpenLoci) · The palace is being built. ∃∞❤️*

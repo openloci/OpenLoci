@@ -39,60 +39,26 @@ title = "OpenLoci"
 
 # ── Navigation ───────────────────────────────────────────────────────────────
 [[menu.main]]
-  name   = "Overview"
-  url    = "/"
+  name   = "What is it?"
+  url    = "/#what-is-openloci"
   weight = 1
 [[menu.main]]
-  name   = "Quick Start"
-  url    = "/quick-start/"
+  name   = "Get Started"
+  url    = "/#get-started"
   weight = 2
 [[menu.main]]
-  name   = "Palace Structure"
-  url    = "/palace-structure/"
+  name   = "Skins"
+  url    = "/#available-skins"
   weight = 3
 [[menu.main]]
-  name   = "Skins"
-  url    = "/skins/"
+  name   = "The Talk"
+  url    = "/#the-world-premiere"
   weight = 4
 [[menu.main]]
   name   = "Philosophy"
   url    = "/philosophy/"
   weight = 5
-[[menu.main]]
-  name   = "Contributing"
-  url    = "/contributing/"
-  weight = 6
 [[menu.main]]
   name   = "GitHub ↗"
   url    = "https://github.com/openloci/OpenLoci"
-  weight = 7
-
-# ── Sidebar: docs nav ────────────────────────────────────────────────────────
-[[menu.sidebar]]
-  name   = "Overview"
-  url    = "/"
-  weight = 1
-[[menu.sidebar]]
-  name   = "Quick Start"
-  url    = "/quick-start/"
-  weight = 2
-[[menu.sidebar]]
-  name   = "Palace Structure"
-  url    = "/palace-structure/"
-  weight = 3
-[[menu.sidebar]]
-  name   = "Skins"
-  url    = "/skins/"
-  weight = 4
-[[menu.sidebar]]
-  name   = "Skin Authoring Guide"
-  url    = "/skins/authoring/"
-  weight = 5
-[[menu.sidebar]]
-  name   = "Philosophy"
-  url    = "/philosophy/"
   weight = 6
-[[menu.sidebar]]
-  name   = "Contributing"
-  url    = "/contributing/"
-  weight = 7

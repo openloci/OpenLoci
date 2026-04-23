@@ -1,3 +1,41 @@
+<a href="#" id="back-to-top" aria-label="Back to top" title="Back to top">↑</a>
+
+<style>
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--accent, #7b5ea7);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+#back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+</style>
+
+<script>
+(function () {
+  var btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function () {
+    btn.classList.toggle('visible', window.scrollY > 300);
+  }, { passive: true });
+})();
+</script>
+
 <footer class="site-footer">
   <div class="site-footer__inner">
     <p class="site-footer__motto"><em>{{ .Site.Params.footer | default "The truth is in the files." }}</em></p>

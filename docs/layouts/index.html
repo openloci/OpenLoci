@@ -35,19 +35,11 @@
 </section>
 {{ end }}
 
-<!-- Docs layout: prose content + sidebar -->
-<div class="home-layout">
-
-  <main class="home-posts">
-    <div class="page__content" style="max-width: 680px;">
-      {{ .Content }}
-    </div>
-  </main>
-
-  <aside class="home-sidebar">
-    {{ partial "sidebar.html" . }}
-  </aside>
-
+<!-- Docs layout: single-column prose -->
+<div style="max-width: 760px; margin: 0 auto; padding: 0 var(--space-m);">
+  <div class="page__content">
+    {{ .Content }}
+  </div>
 </div>
 
 {{ end }}
