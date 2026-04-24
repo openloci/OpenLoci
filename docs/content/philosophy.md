@@ -22,7 +22,7 @@ The [Method of Loci](https://en.wikipedia.org/wiki/Art_of_memory) is a mnemonic 
 
 Frances Yates's *The Art of Memory* (1966) traces this tradition from Cicero through the Renaissance memory theatres of Giulio Camillo, who imagined a building where all human knowledge could be stored and retrieved by position in space.
 
-OpenLoci is a filesystem instantiation of this idea. The palace is the space. The directories are the rooms. The markdown files are the objects placed in each room. The LLM is the walker.
+OpenLoci is a filesystem instantiation of this idea. The palace is the space. The directories are the rooms. The markdown files are the objects placed in each room. The *conversation* between the human and AI is the walk.
 
 The key insight: *spatial structure aids retrieval*. A flat file of everything is opaque. A palace where things live in predictable places is navigable — by humans and by agents.
 
@@ -120,9 +120,9 @@ This predates all our other examples by centuries and makes the argument cross-c
 
 But the belt cannot be read in isolation. It is the mnemonic anchor for an oral tradition that travels alongside it. The belt without the ceremony, without the reader trained by the reader who was trained, is purple and white shells in a pattern. This is the Brakhage problem at the level of material culture: the medium requires its community of interpretation to be meaningful. Strip the community and you have data without context — which is precisely the EMR failure mode.
 
-The Navajo Code Talkers are the same argument from a different angle. The language was chosen as the cipher precisely because it could not be extracted from its community of speakers. No grammar existed in enemy intelligence files. The transmission network *was* the code. Knowledge that lives in a community of practice resists the kind of indexing that destroys it.
+## The Goal
 
-OpenLoci, at some level, is an attempt to build the infrastructure for communities of practice — human and AI — to maintain living records rather than dead archives.
+OpenLoci is an attempt to build the infrastructure for communities of practice — human and AI — to maintain living records rather than dead archives.
 
 ---
 
