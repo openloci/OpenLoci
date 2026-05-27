@@ -31,7 +31,7 @@ openloci new my-investigation --skin xfiles
 openloci new my-startup --skin sv
 ```
 
-This creates a directory at `my-project/` containing `The Vestibule/` and `The Palace/` with all nine rooms.
+This creates a directory at `my-project/` containing `the-vestibule/` and `the-palace/` with all nine rooms.
 
 ---
 

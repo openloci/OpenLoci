@@ -1,5 +1,5 @@
 ---
-title: The Vestibule
+title: the-vestibule
 type: rules
 classification: unclassified
 skin: muppets
@@ -8,7 +8,7 @@ status: active
 date: {{ cookiecutter.date }}
 ---
 
-# The Vestibule
+# the-vestibule
 *Threshold of {{ cookiecutter.palace_name }}*
 
 ---
@@ -41,7 +41,7 @@ The DM is the LLM. The player is the investigator. It ain't easy being green.
 | 7 | Billiard Rm  | priv_broom_closet         | `priv_`    | Private deliberation, off-stage       |
 | 8 | Ballroom     | pitch_the_stage           | `pitch_`   | External relations, the big number    |
 | 9 | Dining Room  | retro_balcony             | `retro_`   | Retrospectives, Statler & Waldorf     |
-| — | Vestibule    | The Vestibule             | —          | Global config (this room)             |
+| — | Vestibule    | the-vestibule             | —          | Global config (this room)             |
 
 ---
 

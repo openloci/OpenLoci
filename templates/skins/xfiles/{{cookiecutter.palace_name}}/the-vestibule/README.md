@@ -1,5 +1,5 @@
 ---
-title: The Vestibule
+title: the-vestibule
 type: rules
 classification: unclassified
 skin: xfiles
@@ -8,7 +8,7 @@ status: active
 date: {{ cookiecutter.date }}
 ---
 
-# The Vestibule
+# the-vestibule
 *Threshold of {{ cookiecutter.palace_name }}*
 
 ---
@@ -41,7 +41,7 @@ The DM is the LLM. The player is the investigator. The truth is out there.
 | 7 | Billiard Rm  | priv_smoking_room             | `priv_`   | Private deliberation            |
 | 8 | Ballroom     | pitch_syndicate_boardroom     | `pitch_`  | Big picture, long arcs          |
 | 9 | Dining Room  | retro_unremarkable_house      | `retro_`  | Personal writing, retrospective |
-| — | Vestibule    | The Vestibule                 | —         | Global config (this room)       |
+| — | Vestibule    | the-vestibule                 | —         | Global config (this room)       |
 
 ---
 

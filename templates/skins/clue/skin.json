@@ -61,7 +61,7 @@
     },
     {
       "clue": "Vestibule",
-      "name": "The Vestibule",
+      "name": "the-vestibule",
       "prefix": "",
       "function": "Global config, characters, rules (room 10)"
     }

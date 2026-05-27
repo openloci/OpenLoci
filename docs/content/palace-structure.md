@@ -8,14 +8,14 @@ Every generated palace has two top-level directories:
 
 ```
 my-palace/
-├── The Vestibule/          ← global config — the threshold before the palace
+├── the-vestibule/          ← global config — the threshold before the palace
 │   ├── README.md           ← entry point; read this first
 │   ├── Characters/         ← one file per character/agent
 │   ├── Rooms/              ← room descriptions and atmosphere
 │   ├── Principles/
 │   │   └── master_prompt.md  ← DM instructions for LLM sessions
 │   └── Journal/            ← Hugo site for rendering session notes
-└── The Palace/             ← nine rooms, prefixed by function
+└── the-palace/             ← nine rooms, prefixed by function
     ├── intake_*/
     ├── build_*/
     ├── ops_*/
@@ -65,9 +65,9 @@ Each character file defines a role, personality, behavioral notes, and voice sam
 
 ---
 
-## The Vestibule
+## the-vestibule
 
-The Vestibule is the threshold — the global configuration layer that sits outside the nine rooms and governs the palace as a whole.
+the-vestibule is the threshold — the global configuration layer that sits outside the nine rooms and governs the palace as a whole.
 
 **`Characters/`** — One markdown file per character the LLM can inhabit. Each file defines the character's role, personality, knowledge domain, and speaking style.
 
@@ -97,7 +97,7 @@ summary: "One-sentence summary of what happened."
 ---
 ```
 
-The `session_type`, `phase`, and `skin` vocabularies are defined in `The Vestibule/Principles/taxonomy.yaml` within each palace instance.
+The `session_type`, `phase`, and `skin` vocabularies are defined in `the-vestibule/Principles/taxonomy.yaml` within each palace instance.
 
 ---
 

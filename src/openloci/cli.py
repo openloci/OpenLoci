@@ -154,7 +154,7 @@ def new(
         Panel(
             f"[bold green]✓ Palace generated:[/bold green] [cyan]{target}[/cyan]\n\n"
             f"  [dim]Enter the vestibule:[/dim]\n"
-            f"  [bold]cd {target}/The\\ Vestibule && cat README.md[/bold]",
+            f"  [bold]cd {target}/the-vestibule && cat README.md[/bold]",
             title="[bold]OpenLoci[/bold]",
             border_style="cyan",
         )
@@ -278,12 +278,12 @@ def info(
     Reads the Vestibule README and reports the palace's skin, rooms, and status.
     """
     target = palace_dir or Path.cwd()
-    vestibule = target / "The Vestibule" / "README.md"
+    vestibule = target / "the-vestibule" / "README.md"
 
     if not vestibule.exists():
         err_console.print(
             f"[bold]✗[/bold] No palace found at [yellow]{target}[/yellow]\n"
-            "  (Looking for [dim]The Vestibule/README.md[/dim])"
+            "  (Looking for [dim]the-vestibule/README.md[/dim])"
         )
         raise typer.Exit(code=1)
 

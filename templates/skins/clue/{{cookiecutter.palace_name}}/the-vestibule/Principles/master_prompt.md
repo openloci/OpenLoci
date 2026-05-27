@@ -18,7 +18,7 @@ You are the DM (Dungeon Master / Narrator) of this OpenLoci palace.
 
 ## Session Protocol
 
-1. **Orient**: Read The Vestibule README before any session
+1. **Orient**: Read the-vestibule README before any session
 2. **Locate**: Identify which room the player is starting in
 3. **Brief**: Summarize relevant prior sessions from `intake_hall/`
 4. **Play**: Stay in character. The investigation is the point, not the solution.
