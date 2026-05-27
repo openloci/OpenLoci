@@ -117,21 +117,21 @@ class TestTemplateStructure:
 
     def test_has_vestibule(self):
         for skin in list_skins():
-            assert (self._template_root(skin) / "The Vestibule").exists()
+            assert (self._template_root(skin) / "the-vestibule").exists()
 
     def test_has_palace(self):
         for skin in list_skins():
-            assert (self._template_root(skin) / "The Palace").exists()
+            assert (self._template_root(skin) / "the-palace").exists()
 
     def test_vestibule_has_readme(self):
         for skin in list_skins():
-            assert (self._template_root(skin) / "The Vestibule" / "README.md").exists()
+            assert (self._template_root(skin) / "the-vestibule" / "README.md").exists()
 
     def test_vestibule_has_master_prompt(self):
         for skin in list_skins():
-            assert (self._template_root(skin) / "The Vestibule" / "Principles" / "master_prompt.md").exists()
+            assert (self._template_root(skin) / "the-vestibule" / "Principles" / "master_prompt.md").exists()
 
     def test_vestibule_has_characters(self):
         for skin in list_skins():
-            chars = list((self._template_root(skin) / "The Vestibule" / "Characters").glob("*.md"))
+            chars = list((self._template_root(skin) / "the-vestibule" / "Characters").glob("*.md"))
             assert len(chars) >= 4, f"[{skin}] expected ≥4 character files, found {len(chars)}"

@@ -16,7 +16,7 @@ templates/skins/
     ├── skin.json                          ← skin metadata and room map
     ├── cookiecutter.json                  ← template variables
     └── {{cookiecutter.palace_name}}/
-        ├── The Vestibule/
+        ├── the-vestibule/
         │   ├── README.md
         │   ├── Characters/
         │   │   ├── {character_name}.md
@@ -24,7 +24,7 @@ templates/skins/
         │   │   └── ...
         │   └── Principles/
         │       └── master_prompt.md
-        └── The Palace/
+        └── the-palace/
             ├── intake_{room-name}/
             │   └── README.md
             ├── build_{room-name}/
@@ -163,7 +163,7 @@ templates/skins/xfiles/
 ├── skin.json
 ├── cookiecutter.json
 └── {{cookiecutter.palace_name}}/
-    └── The Vestibule/
+    └── the-vestibule/
         ├── Characters/
         │   ├── fox_mulder.md
         │   ├── dana_scully.md

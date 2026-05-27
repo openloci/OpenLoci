@@ -1,0 +1,7 @@
+{
+  "palace_name": "my-justice-league-palace",
+  "skin": "justice-league",
+  "investigator_name": "Investigator",
+  "project_description": "The world needs the League. The League needs a methodology.",
+  "date": "{% now 'utc', '%Y-%m-%d' %}"
+}

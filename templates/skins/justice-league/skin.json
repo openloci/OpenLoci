@@ -1,0 +1,101 @@
+{
+  "name": "justice-league",
+  "description": "DC Justice League skin over the Clue chassis. Archetypes, not personalities. The Greek pantheon with capes.",
+  "chassis": "clue",
+  "game_type": "infinite",
+  "rooms": "9 + Vestibule",
+  "room_map": [
+    {
+      "clue": "Hall",
+      "name": "intake_watchtower_bay",
+      "prefix": "intake_",
+      "function": "Routing, inboxes, first watch — who's incoming and why"
+    },
+    {
+      "clue": "Study",
+      "name": "build_batcave",
+      "prefix": "build_",
+      "function": "Active investigation, current work, the case on the wall"
+    },
+    {
+      "clue": "Kitchen",
+      "name": "ops_star_labs",
+      "prefix": "ops_",
+      "function": "Infrastructure, builds, technical support — where the gear lives"
+    },
+    {
+      "clue": "Conservatory",
+      "name": "collab_fortress_of_solitude",
+      "prefix": "collab_",
+      "function": "Deep analysis, close reading, pair work — the archive and the crystal"
+    },
+    {
+      "clue": "Lounge",
+      "name": "meet_round_table",
+      "prefix": "meet_",
+      "function": "Decisions, charters, governance — the League convenes"
+    },
+    {
+      "clue": "Library",
+      "name": "think_hall_of_records",
+      "prefix": "think_",
+      "function": "Research, references, memory — the full mythology"
+    },
+    {
+      "clue": "Billiard Room",
+      "name": "priv_phantom_zone",
+      "prefix": "priv_",
+      "function": "Private deliberation — exiled from view, not ready to surface"
+    },
+    {
+      "clue": "Ballroom",
+      "name": "pitch_hall_of_justice",
+      "prefix": "pitch_",
+      "function": "External relations, big picture, public-facing — what the world sees"
+    },
+    {
+      "clue": "Dining Room",
+      "name": "retro_smallville",
+      "prefix": "retro_",
+      "function": "Origin stories, retrospectives, where the hero came from"
+    },
+    {
+      "clue": "Vestibule",
+      "name": "the-vestibule",
+      "prefix": "",
+      "function": "Global config, characters, rules (room 10)"
+    }
+  ],
+  "characters": [
+    {
+      "clue": "Miss Scarlett",
+      "skin": "Superman",
+      "role": "CRO — the symbol, moral authority, leads with the mission not the method"
+    },
+    {
+      "clue": "Colonel Mustard",
+      "skin": "Batman",
+      "role": "CEO — strategic command, resources, the plan behind the plan"
+    },
+    {
+      "clue": "Mrs. White",
+      "skin": "Cyborg",
+      "role": "CTO — technical implementation, integrated systems, half the infrastructure is him"
+    },
+    {
+      "clue": "Mr. Green",
+      "skin": "The Flash",
+      "role": "COO — execution speed, operations, logistics, gets there first"
+    },
+    {
+      "clue": "Mrs. Peacock",
+      "skin": "Wonder Woman",
+      "role": "CMO — diplomacy, external relations, truth (the lasso does not lie)"
+    },
+    {
+      "clue": "Professor Plum",
+      "skin": "Martian Manhunter",
+      "role": "CSO — context, state, deep background, shapeshifts to what the moment needs"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 ---
-title: The Vestibule
+title: the-vestibule
 type: rules
 classification: unclassified
 skin: sv
@@ -8,7 +8,7 @@ status: active
 date: {{ cookiecutter.date }}
 ---
 
-# The Vestibule
+# the-vestibule
 *Threshold of {{ cookiecutter.palace_name }} — {{ cookiecutter.company_name }}*
 
 ---
@@ -41,7 +41,7 @@ The DM is the LLM. The player is the founder. Not a bug, a pivot.
 | 7 | Billiard Rm  | priv_stealth_mode          | `priv_`   | Sensitive strategy              |
 | 8 | Ballroom     | pitch_sand_hill_road       | `pitch_`  | BizDev, fundraising             |
 | 9 | Dining Room  | social_rooftop             | `social_` | After-hours, decompression      |
-| — | Vestibule    | The Vestibule              | —         | Global config (this room)       |
+| — | Vestibule    | the-vestibule              | —         | Global config (this room)       |
 
 ---
 
