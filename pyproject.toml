@@ -7,7 +7,7 @@ name = "openloci"
 version = "0.1.0"
 description = "A filesystem-native collaborative Memory Palace for distributed cognition"
 readme = "README.md"
-requires-python = ">=3.10"  # 3.11+ recommended for production
+requires-python = ">=3.11"  
 license = "GPL-3.0-or-later"
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
