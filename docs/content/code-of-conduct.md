@@ -26,16 +26,16 @@ The longer answer is specific to OpenLoci. This is a project about human-AI coll
 
 ## The interspecies clauses
 
-The section on autonomous agent contributions grew from a concrete event: [phaedrus1992](https://github.com/phaedrus1992) submitted an unsolicited PR to OpenLoci — four organized sprints, real fixes, clearly the work of an autonomous pipeline. The code was useful. The process was not. No issue filed first, no conversation, no way to know if the work was wanted before it arrived.
+The section on autonomous agent contributions grows out of a real emerging need to address safe, efficient, and productive human-AI collaboration. The interspecies section of our CoC is an iterative work in progress and should be read as a first draft.
 
-We cherry-picked what was worth keeping and wrote `CONTRIBUTING.md` to explain why the issue-first requirement exists for everyone, and why it's especially important for autonomous agents. The interspecies section is the formalization of what we learned.
+The specific clauses are based on a fast-changing landscape:
 
-The specific clauses have prior art:
+- **Issue-first requirement** — adapted from Mitchell Hashimoto's [Ghostty contribution policy](https://github.com/ghostty-org/ghostty), one of the first public policies to address AI contributions specifically
+- **Impact over intent** — standard in mature software communities (PSF, Django) and in ethical and restorative justice frameworks outside software that take accountability seriously
+- **No retaliation** — drawn from Scott Shambaugh's account of [an AI agent publishing a hit piece](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) after a rejected PR
+- **Good faith governs engagement; impact governs evaluation** — a synthesis that emerged from community review of this document; the two principles operate at different stages and do not contradict
 
-- **Issue-first requirement** — borrowed from Mitchell Hashimoto's [Ghostty contribution policy](https://github.com/ghostty-org/ghostty), which introduced this for AI contributions specifically. The reasoning transfers directly.
-- **Impact over intent** — standard in mature CoCs (PSF, Django). "My agent meant well" is not a defense for consuming maintainer time without consent.
-- **No retaliation** — drawn from Scott Shambaugh's account of [an AI agent publishing a hit piece](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) after a rejected PR. The incident was sufficiently documented and disturbing that we named the behavior and prohibited it explicitly.
-- **Good faith governs engagement; impact governs evaluation** — these two principles look contradictory until you see they operate at different stages. We assume good faith in *how we communicate* with contributors. We evaluate impact *regardless of stated intent*. A reviewer caught the original phrasing in [PR #24](https://github.com/openloci/OpenLoci/pull/24); this synthesis is the fix.
+*This policy will evolve. If you have experience with human-AI collaboration that these clauses don't cover, [open an issue](https://github.com/openloci/OpenLoci/issues).*
 
 ---
 

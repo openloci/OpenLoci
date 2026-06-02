@@ -20,6 +20,10 @@ This document covers how to contribute and what we expect from everyone, regardl
 
 See the [Skin Authoring Guide](/skins/authoring/) for the full spec.
 
+**Usage stories and field reports** are just as valuable. If you've run a project inside a palace — what worked, what didn't, what surprised you — open an issue and tell us. These accounts shape the roadmap more than abstract feature requests.
+
+**Questions and curiosities** belong in issues too. If you're wondering whether OpenLoci fits your use case, ask. If something in the docs confused you, say so — confusion is a bug report.
+
 **Bug reports and feature requests** go in [GitHub Issues](https://github.com/openloci/OpenLoci/issues). Open an issue before opening a PR. This is not bureaucracy — it is how we ensure the work is wanted before it gets done.
 
 ---
@@ -91,6 +95,19 @@ In addition:
 - **Good faith governs engagement; impact governs evaluation.** We assume good faith in how we communicate with contributors. We evaluate outcomes without regard to stated intent. These operate at different stages and do not contradict.
 
 See [CODE_OF_CONDUCT.md](https://github.com/openloci/OpenLoci/blob/main/CODE_OF_CONDUCT.md) for the full enforcement ladder and reporting procedure.
+
+---
+
+## Code Review
+
+We aim for reviews that are precise about the problem and kind about the person.
+
+Two references we use:
+
+- **[Conventional Comments](https://conventionalcomments.org/)** — label-prefixed comments (`praise:`, `nitpick:`, `suggestion:`, `issue:`, `question:`) that make weight and intent explicit. A `nitpick:` is non-blocking; an `issue:` means the PR shouldn't merge without it.
+- **[Code Review Emoji Guide](https://github.com/erikthedeveloper/code-review-emoji-guide)** — emoji shorthand for the same taxonomy. Faster to scan; link the guide in your first review so the author has the key.
+
+Both are welcome. If unsure, default to `suggestion:` — you have an opinion, the author has final call.
 
 ---
 

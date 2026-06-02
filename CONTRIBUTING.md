@@ -12,6 +12,10 @@ This document covers how to contribute and what we expect from everyone, regardl
 
 See the [Skin Authoring Guide](https://openloci.org/skins/authoring/) for the full spec.
 
+**Usage stories and field reports** are just as valuable. If you've run a project inside a palace — what worked, what didn't, what surprised you — open an issue and tell us. These accounts shape the roadmap more than abstract feature requests. We don't have a formal knowledge base yet; issues are the right place for now.
+
+**Questions and curiosities** belong in issues too. If you're wondering whether OpenLoci fits your use case, ask. If something in the docs confused you, say so — confusion is a bug report.
+
 **Bug reports and feature requests** go in [GitHub Issues](https://github.com/openloci/OpenLoci/issues). Open an issue before opening a PR. This is not bureaucracy — it is how we ensure the work is wanted before it gets done.
 
 ---
@@ -69,6 +73,19 @@ make test
 ```
 
 Requires Python 3.11+. [uv](https://github.com/astral-sh/uv) recommended.
+
+---
+
+## Code Review
+
+We aim for reviews that are precise about the problem and kind about the person. A review comment should leave the contributor knowing exactly what to do and feeling like they're welcome to come back.
+
+Two references we use:
+
+- **[Conventional Comments](https://conventionalcomments.org/)** — label-prefixed comments (`praise:`, `nitpick:`, `suggestion:`, `issue:`, `question:`) that make weight and intent explicit. A `nitpick:` is non-blocking by definition; an `issue:` means the PR shouldn't merge without addressing it. No ambiguity.
+- **[Code Review Emoji Guide](https://github.com/erikthedeveloper/code-review-emoji-guide)** — emoji shorthand for the same semantic taxonomy. `:pick:` ≈ `nitpick:`, `:seedling:` ≈ `suggestion:`, `:thinking:` ≈ `question:`. Faster to scan; less portable to contexts where emoji don't render well.
+
+Both systems are welcome here. If you use emoji, link the guide in your first review on a PR so the author has the key. If you're unsure what weight to give a comment, default to `suggestion:` — it signals that you have an opinion but the author has final call.
 
 ---
 
