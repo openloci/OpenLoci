@@ -140,6 +140,44 @@ body {
 }
 .site-nav a:hover { color: var(--accent); }
 
+/* ── Nav dropdown ─────────────────────────────────────────────────────── */
+.nav-dropdown {
+  position: relative;
+}
+.nav-dropdown__trigger {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-dropdown__trigger:hover { color: var(--accent); }
+.nav-dropdown__menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--bg);
+  border: 1px solid var(--border, #2a2a2a);
+  border-radius: 4px;
+  padding: 0.4rem 0;
+  min-width: 12rem;
+  z-index: 100;
+  flex-direction: column;
+  gap: 0;
+}
+.nav-dropdown:hover .nav-dropdown__menu { display: flex; }
+.nav-dropdown__menu a {
+  display: block;
+  padding: 0.4rem 0.9rem;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s, background 0.15s;
+}
+.nav-dropdown__menu a:hover {
+  color: var(--accent);
+  background: var(--surface, #111);
+}
+
 /* ── Hero Band (homepage only) ────────────────────────────────────────── */
 .hero-band {
   background: #0d0d14;

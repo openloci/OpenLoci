@@ -18,7 +18,18 @@
     </div>
     <nav class="site-nav" aria-label="Main navigation">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+        <div class="nav-dropdown">
+          <a href="{{ .URL | absURL }}" class="nav-dropdown__trigger">{{ .Name }}</a>
+          <div class="nav-dropdown__menu">
+            {{ range .Children }}
+            <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </div>
+        {{ else }}
+        <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+        {{ end }}
       {{ end }}
     </nav>
   </div>
