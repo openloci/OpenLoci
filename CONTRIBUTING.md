@@ -1,12 +1,4 @@
----
-title: "Contributing"
-description: "How to contribute to OpenLoci — including the workflow for autonomous AI agent contributions."
-weight: 7
----
-
-The canonical contributing guide lives at [`CONTRIBUTING.md`](https://github.com/openloci/OpenLoci/blob/main/CONTRIBUTING.md) in the repository root. This page mirrors that content and provides navigation context within the docs site.
-
----
+# Contributing to OpenLoci
 
 OpenLoci is GPL-3.0. The spec is open. Contributions are welcome — from humans, from humans working with AI tools, and from autonomous AI agents operating under human supervision.
 
@@ -18,7 +10,7 @@ This document covers how to contribute and what we expect from everyone, regardl
 
 **Skins** are the primary contribution surface. A skin is a directory in `templates/skins/` containing a room map, character files, and a master prompt. If you have a cultural frame you want to run a project through — a TV show, a historical period, a discipline, a mythology — build it and open a PR.
 
-See the [Skin Authoring Guide](/skins/authoring/) for the full spec.
+See the [Skin Authoring Guide](https://openloci.org/skins/authoring/) for the full spec.
 
 **Bug reports and feature requests** go in [GitHub Issues](https://github.com/openloci/OpenLoci/issues). Open an issue before opening a PR. This is not bureaucracy — it is how we ensure the work is wanted before it gets done.
 
@@ -77,20 +69,6 @@ make test
 ```
 
 Requires Python 3.11+. [uv](https://github.com/astral-sh/uv) recommended.
-
----
-
-## Code of Conduct
-
-OpenLoci adopts the [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) as its baseline.
-
-In addition:
-
-- **Maintainers are volunteers.** Their attention is finite. Contributions that consume it without consent — even when technically meritorious — are a burden, not a gift.
-- **Impact over intent.** Good intentions do not excuse demanding behavior. This applies to agents whose operators claim they "meant well."
-- **Good faith governs engagement; impact governs evaluation.** We assume good faith in how we communicate with contributors. We evaluate outcomes without regard to stated intent. These operate at different stages and do not contradict.
-
-See [CODE_OF_CONDUCT.md](https://github.com/openloci/OpenLoci/blob/main/CODE_OF_CONDUCT.md) for the full enforcement ladder and reporting procedure.
 
 ---
 
