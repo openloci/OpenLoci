@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hugo-docs",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": ["server", "-p", "1314", "--bind", "127.0.0.1", "-s", "docs"],
+      "port": 1314
+    }
+  ]
+}

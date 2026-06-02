@@ -1,12 +1,4 @@
----
-title: "Contributing"
-description: "How to contribute to OpenLoci — including the workflow for autonomous AI agent contributions."
-weight: 7
----
-
-The canonical contributing guide lives at [`CONTRIBUTING.md`](https://github.com/openloci/OpenLoci/blob/main/CONTRIBUTING.md) in the repository root. This page mirrors that content and provides navigation context within the docs site.
-
----
+# Contributing to OpenLoci
 
 OpenLoci is GPL-3.0. The spec is open. Contributions are welcome — from humans, from humans working with AI tools, and from autonomous AI agents operating under human supervision.
 
@@ -18,9 +10,9 @@ This document covers how to contribute and what we expect from everyone, regardl
 
 **Skins** are the primary contribution surface. A skin is a directory in `templates/skins/` containing a room map, character files, and a master prompt. If you have a cultural frame you want to run a project through — a TV show, a historical period, a discipline, a mythology — build it and open a PR.
 
-See the [Skin Authoring Guide](/skins/authoring/) for the full spec.
+See the [Skin Authoring Guide](https://openloci.org/skins/authoring/) for the full spec.
 
-**Usage stories and field reports** are just as valuable. If you've run a project inside a palace — what worked, what didn't, what surprised you — open an issue and tell us. These accounts shape the roadmap more than abstract feature requests.
+**Usage stories and field reports** are just as valuable. If you've run a project inside a palace — what worked, what didn't, what surprised you — open an issue and tell us. These accounts shape the roadmap more than abstract feature requests. We don't have a formal knowledge base yet; issues are the right place for now.
 
 **Questions and curiosities** belong in issues too. If you're wondering whether OpenLoci fits your use case, ask. If something in the docs confused you, say so — confusion is a bug report.
 
@@ -84,30 +76,16 @@ Requires Python 3.11+. [uv](https://github.com/astral-sh/uv) recommended.
 
 ---
 
-## Code of Conduct
-
-OpenLoci adopts the [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) as its baseline.
-
-In addition:
-
-- **Maintainers are volunteers.** Their attention is finite. Contributions that consume it without consent — even when technically meritorious — are a burden, not a gift.
-- **Impact over intent.** Good intentions do not excuse demanding behavior. This applies to agents whose operators claim they "meant well."
-- **Good faith governs engagement; impact governs evaluation.** We assume good faith in how we communicate with contributors. We evaluate outcomes without regard to stated intent. These operate at different stages and do not contradict.
-
-See [CODE_OF_CONDUCT.md](https://github.com/openloci/OpenLoci/blob/main/CODE_OF_CONDUCT.md) for the full enforcement ladder and reporting procedure.
-
----
-
 ## Code Review
 
-We aim for reviews that are precise about the problem and kind about the person.
+We aim for reviews that are precise about the problem and kind about the person. A review comment should leave the contributor knowing exactly what to do and feeling like they're welcome to come back.
 
 Two references we use:
 
-- **[Conventional Comments](https://conventionalcomments.org/)** — label-prefixed comments (`praise:`, `nitpick:`, `suggestion:`, `issue:`, `question:`) that make weight and intent explicit. A `nitpick:` is non-blocking; an `issue:` means the PR shouldn't merge without it.
-- **[Code Review Emoji Guide](https://github.com/erikthedeveloper/code-review-emoji-guide)** — emoji shorthand for the same taxonomy. Faster to scan; link the guide in your first review so the author has the key.
+- **[Conventional Comments](https://conventionalcomments.org/)** — label-prefixed comments (`praise:`, `nitpick:`, `suggestion:`, `issue:`, `question:`) that make weight and intent explicit. A `nitpick:` is non-blocking by definition; an `issue:` means the PR shouldn't merge without addressing it. No ambiguity.
+- **[Code Review Emoji Guide](https://github.com/erikthedeveloper/code-review-emoji-guide)** — emoji shorthand for the same semantic taxonomy. `:pick:` ≈ `nitpick:`, `:seedling:` ≈ `suggestion:`, `:thinking:` ≈ `question:`. Faster to scan; less portable to contexts where emoji don't render well.
 
-Both are welcome. If unsure, default to `suggestion:` — you have an opinion, the author has final call.
+Both systems are welcome here. If you use emoji, link the guide in your first review on a PR so the author has the key. If you're unsure what weight to give a comment, default to `suggestion:` — it signals that you have an opinion but the author has final call.
 
 ---
 

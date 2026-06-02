@@ -55,9 +55,20 @@ title = "OpenLoci"
   url    = "/#the-world-premiere"
   weight = 4
 [[menu.main]]
-  name   = "Philosophy"
-  url    = "/philosophy/"
-  weight = 5
+  name       = "Philosophy"
+  url        = "/philosophy/"
+  weight     = 5
+  identifier = "philosophy"
+[[menu.main]]
+  name   = "Contributing"
+  url    = "/contributing/"
+  weight = 1
+  parent = "philosophy"
+[[menu.main]]
+  name   = "Code of Conduct"
+  url    = "/code-of-conduct/"
+  weight = 2
+  parent = "philosophy"
 [[menu.main]]
   name   = "GitHub ↗"
   url    = "https://github.com/openloci/OpenLoci"
