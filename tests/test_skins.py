@@ -181,11 +181,15 @@ class TestTemplateStructure:
                             f"[{skin}] room '{room_dir.name}' still uses old prefix '{old}'"
 
     def test_vestibule_readme_uses_gerund_prefixes(self):
-        """Vestibule README room map must not contain old-style prefixes."""
-        old_prefixes = ["intake_", "build_", "ops_", "collab_", "meet_", "think_", "priv_", "retro_", "social_"]
+        """Vestibule README room map must reference new gerund prefixes and contain none of the old-style prefixes."""
+        old_prefixes = ["intake_", "build_", "ops_", "collab_", "meet_", "think_", "priv_", "pitch_", "retro_", "social_"]
+        new_prefixes = ["communicating_", "synthesizing_", "iterating_", "releasing_",
+                        "deliberating_", "researching_", "brainstorming_", "pitching_", "planning_"]
         for skin in list_skins():
             readme = self._template_root(skin) / "the-vestibule" / "README.md"
             content = readme.read_text()
             for old in old_prefixes:
                 assert f"`{old}`" not in content, \
                     f"[{skin}] vestibule README still references old prefix `{old}`"
+            assert any(p in content for p in new_prefixes), \
+                f"[{skin}] vestibule README contains no gerund prefixes — room map may be missing entirely"
