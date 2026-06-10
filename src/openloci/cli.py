@@ -153,8 +153,8 @@ def new(
     console.print(
         Panel(
             f"[bold green]✓ Palace generated:[/bold green] [cyan]{target}[/cyan]\n\n"
-            f"  [dim]Enter the vestibule:[/dim]\n"
-            f"  [bold]cd {target}/the-vestibule && cat README.md[/bold]",
+            f"  [dim]Enter the garden:[/dim]\n"
+            f"  [bold]cd {target}/the-garden && cat README.md[/bold]",
             title="[bold]OpenLoci[/bold]",
             border_style="cyan",
         )
@@ -246,7 +246,7 @@ def rooms(
     )
     table.add_column("#", style="dim", width=3)
     table.add_column("Clue Room", style="dim")
-    table.add_column("Skin Room", style="bold")
+    table.add_column("Room", style="bold")
     table.add_column("Prefix", style="cyan")
     table.add_column("Function", style="dim")
 
@@ -275,23 +275,23 @@ def info(
     """
     [bold]Show info about an existing palace.[/bold]
 
-    Reads the Vestibule README and reports the palace's skin, rooms, and status.
+    Reads the Garden README and reports the palace's skin, rooms, and status.
     """
     target = palace_dir or Path.cwd()
-    vestibule = target / "the-vestibule" / "README.md"
+    garden = target / "the-garden" / "README.md"
 
-    if not vestibule.exists():
+    if not garden.exists():
         err_console.print(
             f"[bold]✗[/bold] No palace found at [yellow]{target}[/yellow]\n"
-            "  (Looking for [dim]the-vestibule/README.md[/dim])"
+            "  (Looking for [dim]the-garden/README.md[/dim])"
         )
         raise typer.Exit(code=1)
 
-    content = vestibule.read_text()
+    content = garden.read_text()
     console.print(
         Panel(
             content[:1200] + ("\n[dim]…[/dim]" if len(content) > 1200 else ""),
-            title=f"[bold cyan]{target.name}[/bold cyan] — Vestibule",
+            title=f"[bold cyan]{target.name}[/bold cyan] — Garden",
             border_style="cyan",
         )
     )
