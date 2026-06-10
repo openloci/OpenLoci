@@ -82,7 +82,7 @@ class TestGetSkinInfo:
         for skin in list_skins():
             info = get_skin_info(skin)
             assert len(info["room_map"]) == 10, \
-                f"Skin '{skin}' has {len(info['room_map'])} rooms, expected 10 (9 + Vestibule)"
+                f"Skin '{skin}' has {len(info['room_map'])} rooms, expected 10 (9 + Garden)"
 
     def test_core_cast(self):
         """skin.json must define exactly 6 core characters — one per Clue suspect
@@ -117,26 +117,10 @@ class TestTemplateStructure:
         assert len(candidates) == 1
         return candidates[0]
 
-    def test_has_vestibule(self):
+    def test_has_mansion(self):
         for skin in list_skins():
-            assert (self._template_root(skin) / "the-vestibule").exists()
-
-    def test_has_palace(self):
-        for skin in list_skins():
-            assert (self._template_root(skin) / "the-palace").exists()
-
-    def test_vestibule_has_readme(self):
-        for skin in list_skins():
-            assert (self._template_root(skin) / "the-vestibule" / "README.md").exists()
-
-    def test_vestibule_has_master_prompt(self):
-        for skin in list_skins():
-            assert (self._template_root(skin) / "the-vestibule" / "Principles" / "master_prompt.md").exists()
-
-    def test_vestibule_has_characters(self):
-        for skin in list_skins():
-            chars = list((self._template_root(skin) / "the-vestibule" / "Characters").glob("*.md"))
-            assert len(chars) >= 4, f"[{skin}] expected ≥4 character files, found {len(chars)}"
+            assert (self._template_root(skin) / "the-mansion").exists(), \
+                f"[{skin}] missing the-mansion/"
 
     def test_has_graveyard(self):
         for skin in list_skins():
@@ -150,46 +134,60 @@ class TestTemplateStructure:
             assert garden.exists(), f"[{skin}] missing the-garden/"
             assert (garden / "TODO.md").exists(), f"[{skin}] missing the-garden/TODO.md"
 
-    def test_palace_has_nine_rooms(self):
+    def test_garden_has_readme(self):
+        for skin in list_skins():
+            assert (self._template_root(skin) / "the-garden" / "README.md").exists(), \
+                f"[{skin}] missing the-garden/README.md"
+
+    def test_garden_has_master_prompt(self):
+        for skin in list_skins():
+            assert (self._template_root(skin) / "the-garden" / "Rules" / "master_prompt.md").exists(), \
+                f"[{skin}] missing the-garden/Rules/master_prompt.md"
+
+    def test_garden_has_characters(self):
+        for skin in list_skins():
+            chars = list((self._template_root(skin) / "the-garden" / "Characters").glob("*.md"))
+            assert len(chars) >= 4, f"[{skin}] expected ≥4 character files, found {len(chars)}"
+
+    def test_mansion_has_nine_rooms(self):
         for skin in list_skins():
             info = get_skin_info(skin)
-            palace_rooms = [r for r in info["room_map"] if r["clue"] != "Vestibule"]
-            palace_dir = self._template_root(skin) / "the-palace"
-            actual_rooms = [d for d in palace_dir.iterdir() if d.is_dir()]
+            mansion_dir = self._template_root(skin) / "the-mansion"
+            actual_rooms = [d for d in mansion_dir.iterdir() if d.is_dir()]
             assert len(actual_rooms) == 9, \
-                f"[{skin}] expected 9 room dirs in the-palace, found {len(actual_rooms)}"
+                f"[{skin}] expected 9 room dirs in the-mansion, found {len(actual_rooms)}"
 
-    def test_palace_rooms_match_skin_json(self):
-        """Room directory names in the-palace must match the skin.json room_map."""
+    def test_mansion_rooms_match_skin_json(self):
+        """Room directory names in the-mansion must match the skin.json room_map."""
         for skin in list_skins():
             info = get_skin_info(skin)
             expected = {r["name"] for r in info["room_map"] if r["clue"] != "Vestibule"}
-            palace_dir = self._template_root(skin) / "the-palace"
-            actual = {d.name for d in palace_dir.iterdir() if d.is_dir()}
+            mansion_dir = self._template_root(skin) / "the-mansion"
+            actual = {d.name for d in mansion_dir.iterdir() if d.is_dir()}
             assert actual == expected, \
                 f"[{skin}] room dir mismatch.\n  Expected: {sorted(expected)}\n  Actual:   {sorted(actual)}"
 
-    def test_palace_rooms_use_gerund_prefixes(self):
+    def test_mansion_rooms_use_gerund_prefixes(self):
         """Every room dir must start with its skin.json prefix (no old-style intake_/build_/etc)."""
         old_prefixes = {"intake_", "build_", "ops_", "collab_", "meet_", "think_", "priv_", "pitch_", "retro_", "social_"}
         for skin in list_skins():
-            palace_dir = self._template_root(skin) / "the-palace"
-            for room_dir in palace_dir.iterdir():
+            mansion_dir = self._template_root(skin) / "the-mansion"
+            for room_dir in mansion_dir.iterdir():
                 if room_dir.is_dir():
                     for old in old_prefixes:
                         assert not room_dir.name.startswith(old), \
                             f"[{skin}] room '{room_dir.name}' still uses old prefix '{old}'"
 
-    def test_vestibule_readme_uses_gerund_prefixes(self):
-        """Vestibule README room map must reference new gerund prefixes and contain none of the old-style prefixes."""
+    def test_garden_readme_uses_gerund_prefixes(self):
+        """Garden README room map must reference new gerund prefixes and contain none of the old-style prefixes."""
         old_prefixes = ["intake_", "build_", "ops_", "collab_", "meet_", "think_", "priv_", "pitch_", "retro_", "social_"]
         new_prefixes = ["communicating_", "synthesizing_", "iterating_", "releasing_",
                         "deliberating_", "researching_", "brainstorming_", "pitching_", "planning_"]
         for skin in list_skins():
-            readme = self._template_root(skin) / "the-vestibule" / "README.md"
+            readme = self._template_root(skin) / "the-garden" / "README.md"
             content = readme.read_text()
             for old in old_prefixes:
                 assert f"`{old}`" not in content, \
-                    f"[{skin}] vestibule README still references old prefix `{old}`"
+                    f"[{skin}] garden README still references old prefix `{old}`"
             assert any(p in content for p in new_prefixes), \
-                f"[{skin}] vestibule README contains no gerund prefixes — room map may be missing entirely"
+                f"[{skin}] garden README contains no gerund prefixes — room map may be missing entirely"

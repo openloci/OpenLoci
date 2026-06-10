@@ -1,5 +1,5 @@
 ---
-title: the-vestibule
+title: the-garden
 type: rules
 classification: unclassified
 skin: muppets
@@ -8,8 +8,8 @@ status: active
 date: {{ cookiecutter.date }}
 ---
 
-# the-vestibule
-*Threshold of {{ cookiecutter.palace_name }}*
+# the-garden
+*Garden of {{ cookiecutter.palace_name }}*
 
 ---
 
@@ -35,19 +35,19 @@ The DM is the LLM. The player is the investigator. It ain't easy being green.
 | 1 | Hall         | communicating_hall     | `communicating_` | Routing, intake, first impressions                      |
 | 2 | Study        | synthesizing_study  | `synthesizing_`  | Active work, direction, the show must go on             |
 | 3 | Kitchen      | iterating_kitchen          | `iterating_`     | Infrastructure, logistics, chaos management             |
-| 4 | Conservatory | releasing_conservatory      | `releasing_`     | Pair work, rehearsal, ensemble effort                   |
+| 4 | Conservatory | releasing_conservatory      | `releasing_`     | Handoffs, pairing, deployments — work crossing a threshold to another context                   |
 | 5 | Lounge       | deliberating_lounge      | `deliberating_`  | Decisions, charters, pre-show prep                      |
 | 6 | Library      | researching_library | `researching_`   | Research, references, the archive of bits               |
 | 7 | Billiard Room | brainstorming_billiard_room   | `brainstorming_` | Private deliberation, things not ready for the stage    |
 | 8 | Ballroom     | pitching_ballroom           | `pitching_`      | External relations, performance, the big number         |
 | 9 | Dining Room  | planning_dining_room             | `planning_`      | Retrospectives, commentary, Statler & Waldorf territory |
-| — | Vestibule    | the-vestibule                | —                | Global config, characters, rules (room 10)              |
+| — | Vestibule    | the-garden                | —                | Global config, characters, rules (room 10)              |
 
 ---
 
 ## To Begin a Session
 
-1. Read `Principles/master_prompt.md`
+1. Read `Rules/master_prompt.md`
 2. Read relevant character card(s) from `Characters/`
 3. Declare your starting room
 4. The DM opens the curtain
