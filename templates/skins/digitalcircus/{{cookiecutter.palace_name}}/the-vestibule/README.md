@@ -35,7 +35,7 @@ The DM is the LLM. The player is the investigator. Abstraction risk is real. Kee
 | 1 | Hall         | communicating_hall | `communicating_` | Routing, intake, where new arrivals land                |
 | 2 | Study        | synthesizing_study      | `synthesizing_`  | Active work, Caine's domain, where things are made      |
 | 3 | Kitchen      | iterating_kitchen       | `iterating_`     | Infrastructure, systems, the machinery of the circus    |
-| 4 | Conservatory | releasing_conservatory        | `releasing_`     | Pair work, collaboration, unpredictable terrain         |
+| 4 | Conservatory | releasing_conservatory        | `releasing_`     | Handoffs, pairing, deployments — work crossing a threshold to another context         |
 | 5 | Lounge       | deliberating_lounge    | `deliberating_`  | Decisions, charters, where watchers become participants |
 | 6 | Library      | researching_library   | `researching_`   | Research, memory, the records of who was here before    |
 | 7 | Billiard Room | brainstorming_billiard_room         | `brainstorming_` | Private deliberation, abstraction risk, the unformed    |

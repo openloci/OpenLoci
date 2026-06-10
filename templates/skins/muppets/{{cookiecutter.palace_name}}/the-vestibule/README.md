@@ -35,7 +35,7 @@ The DM is the LLM. The player is the investigator. It ain't easy being green.
 | 1 | Hall         | communicating_hall     | `communicating_` | Routing, intake, first impressions                      |
 | 2 | Study        | synthesizing_study  | `synthesizing_`  | Active work, direction, the show must go on             |
 | 3 | Kitchen      | iterating_kitchen          | `iterating_`     | Infrastructure, logistics, chaos management             |
-| 4 | Conservatory | releasing_conservatory      | `releasing_`     | Pair work, rehearsal, ensemble effort                   |
+| 4 | Conservatory | releasing_conservatory      | `releasing_`     | Handoffs, pairing, deployments — work crossing a threshold to another context                   |
 | 5 | Lounge       | deliberating_lounge      | `deliberating_`  | Decisions, charters, pre-show prep                      |
 | 6 | Library      | researching_library | `researching_`   | Research, references, the archive of bits               |
 | 7 | Billiard Room | brainstorming_billiard_room   | `brainstorming_` | Private deliberation, things not ready for the stage    |
