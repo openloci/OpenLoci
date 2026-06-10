@@ -10,8 +10,6 @@ from pathlib import Path
 
 import pytest
 
-import sys
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from openloci.skins import list_skins, get_skin_path, get_skin_info
 
@@ -86,11 +84,15 @@ class TestGetSkinInfo:
             assert len(info["room_map"]) == 10, \
                 f"Skin '{skin}' has {len(info['room_map'])} rooms, expected 10 (9 + Vestibule)"
 
-    def test_six_characters(self):
+    def test_core_cast(self):
+        """skin.json must define exactly 6 core characters — one per Clue suspect
+        (Miss Scarlett, Col. Mustard, Mrs. White, Mr. Green, Mrs. Peacock, Prof. Plum).
+        These are the structural chassis roles. The Characters/ directory may hold
+        any number of additional ensemble members beyond this core six."""
         for skin in list_skins():
             info = get_skin_info(skin)
             assert len(info["characters"]) == 6, \
-                f"Skin '{skin}' has {len(info['characters'])} characters, expected 6"
+                f"Skin '{skin}' has {len(info['characters'])} core cast members in skin.json, expected 6 (one per Clue suspect)"
 
     def test_room_map_fields(self):
         for skin in list_skins():
@@ -135,3 +137,59 @@ class TestTemplateStructure:
         for skin in list_skins():
             chars = list((self._template_root(skin) / "the-vestibule" / "Characters").glob("*.md"))
             assert len(chars) >= 4, f"[{skin}] expected ≥4 character files, found {len(chars)}"
+
+    def test_has_graveyard(self):
+        for skin in list_skins():
+            graveyard = self._template_root(skin) / "the-graveyard"
+            assert graveyard.exists(), f"[{skin}] missing the-graveyard/"
+            assert (graveyard / "README.md").exists(), f"[{skin}] missing the-graveyard/README.md"
+
+    def test_has_garden(self):
+        for skin in list_skins():
+            garden = self._template_root(skin) / "the-garden"
+            assert garden.exists(), f"[{skin}] missing the-garden/"
+            assert (garden / "TODO.md").exists(), f"[{skin}] missing the-garden/TODO.md"
+
+    def test_palace_has_nine_rooms(self):
+        for skin in list_skins():
+            info = get_skin_info(skin)
+            palace_rooms = [r for r in info["room_map"] if r["clue"] != "Vestibule"]
+            palace_dir = self._template_root(skin) / "the-palace"
+            actual_rooms = [d for d in palace_dir.iterdir() if d.is_dir()]
+            assert len(actual_rooms) == 9, \
+                f"[{skin}] expected 9 room dirs in the-palace, found {len(actual_rooms)}"
+
+    def test_palace_rooms_match_skin_json(self):
+        """Room directory names in the-palace must match the skin.json room_map."""
+        for skin in list_skins():
+            info = get_skin_info(skin)
+            expected = {r["name"] for r in info["room_map"] if r["clue"] != "Vestibule"}
+            palace_dir = self._template_root(skin) / "the-palace"
+            actual = {d.name for d in palace_dir.iterdir() if d.is_dir()}
+            assert actual == expected, \
+                f"[{skin}] room dir mismatch.\n  Expected: {sorted(expected)}\n  Actual:   {sorted(actual)}"
+
+    def test_palace_rooms_use_gerund_prefixes(self):
+        """Every room dir must start with its skin.json prefix (no old-style intake_/build_/etc)."""
+        old_prefixes = {"intake_", "build_", "ops_", "collab_", "meet_", "think_", "priv_", "pitch_", "retro_", "social_"}
+        for skin in list_skins():
+            palace_dir = self._template_root(skin) / "the-palace"
+            for room_dir in palace_dir.iterdir():
+                if room_dir.is_dir():
+                    for old in old_prefixes:
+                        assert not room_dir.name.startswith(old), \
+                            f"[{skin}] room '{room_dir.name}' still uses old prefix '{old}'"
+
+    def test_vestibule_readme_uses_gerund_prefixes(self):
+        """Vestibule README room map must reference new gerund prefixes and contain none of the old-style prefixes."""
+        old_prefixes = ["intake_", "build_", "ops_", "collab_", "meet_", "think_", "priv_", "pitch_", "retro_", "social_"]
+        new_prefixes = ["communicating_", "synthesizing_", "iterating_", "releasing_",
+                        "deliberating_", "researching_", "brainstorming_", "pitching_", "planning_"]
+        for skin in list_skins():
+            readme = self._template_root(skin) / "the-vestibule" / "README.md"
+            content = readme.read_text()
+            for old in old_prefixes:
+                assert f"`{old}`" not in content, \
+                    f"[{skin}] vestibule README still references old prefix `{old}`"
+            assert any(p in content for p in new_prefixes), \
+                f"[{skin}] vestibule README contains no gerund prefixes — room map may be missing entirely"

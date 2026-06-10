@@ -31,18 +31,18 @@ DC maps to the Greek pantheon: archetypes before personalities, principles befor
 
 ## Room Map
 
-| # | Clue Room    | Justice League Room           | Prefix    | Function                              |
-|---|--------------|-------------------------------|-----------|---------------------------------------|
-| 1 | Hall         | intake_watchtower_bay         | `intake_` | Routing, inboxes, first watch         |
-| 2 | Study        | build_batcave                 | `build_`  | Active work, current investigation    |
-| 3 | Kitchen      | ops_star_labs                 | `ops_`    | Infrastructure, builds, technical ops |
-| 4 | Conservatory | collab_fortress_of_solitude   | `collab_` | Deep analysis, pair work, archives    |
-| 5 | Lounge       | meet_round_table              | `meet_`   | Decisions, charters, the League votes |
-| 6 | Library      | think_hall_of_records         | `think_`  | Research, references, full mythology  |
-| 7 | Billiard Rm  | priv_phantom_zone             | `priv_`   | Private — exiled from view            |
-| 8 | Ballroom     | pitch_hall_of_justice         | `pitch_`  | External, public-facing, big picture  |
-| 9 | Dining Room  | retro_smallville              | `retro_`  | Origin stories, retrospectives        |
-| — | Vestibule    | the-vestibule                 | —         | Global config (this room)             |
+| # | Clue Room    | Justice League Room             | Prefix            | Function                                                               |
+|---|--------------|--------------------------------|------------------|-----------------------------------------------------------------------|
+| 1 | Hall         | communicating_watchtower_bay   | `communicating_` | Routing, inboxes, first watch — who's incoming and why                |
+| 2 | Study        | synthesizing_batcave           | `synthesizing_`  | Active investigation, current work, the case on the wall              |
+| 3 | Kitchen      | iterating_star_labs            | `iterating_`     | Infrastructure, builds, technical support — where the gear lives      |
+| 4 | Conservatory | releasing_fortress_of_solitude | `releasing_`     | Deep analysis, close reading, pair work — the archive and the crystal |
+| 5 | Lounge       | deliberating_round_table       | `deliberating_`  | Decisions, charters, governance — the League convenes                 |
+| 6 | Library      | researching_hall_of_records    | `researching_`   | Research, references, memory — the full mythology                     |
+| 7 | Billiard Room | brainstorming_phantom_zone     | `brainstorming_` | Private deliberation — exiled from view, not ready to surface         |
+| 8 | Ballroom     | pitching_hall_of_justice       | `pitching_`      | External relations, big picture, public-facing — what the world sees  |
+| 9 | Dining Room  | planning_smallville            | `planning_`      | Origin stories, retrospectives, where the hero came from              |
+| — | Vestibule    | the-vestibule                  | —                | Global config, characters, rules (room 10)                            |
 
 ---
 

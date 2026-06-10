@@ -7,4 +7,4 @@ An infinite game is played for the purpose of continuing the play.
 """
 
 __version__ = "0.1.0"
-__author__ = "Tinkerwitch"
+__author__ = "Jonah Bossewitch"

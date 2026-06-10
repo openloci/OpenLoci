@@ -30,18 +30,18 @@ The DM is the LLM. The player is the investigator. The truth is out there.
 
 ## Room Map
 
-| # | Clue Room    | X-Files Room                  | Prefix    | Function                        |
-|---|--------------|-------------------------------|-----------|---------------------------------|
-| 1 | Hall         | intake_hoover_corridor        | `intake_` | Routing, inboxes, intake        |
-| 2 | Study        | build_basement_office         | `build_`  | Active investigation            |
-| 3 | Kitchen      | ops_lone_gunmen_bunker        | `ops_`    | Code, builds, infrastructure    |
-| 4 | Conservatory | collab_autopsy_bay            | `collab_` | Analysis, forensics             |
-| 5 | Lounge       | meet_skinners_office          | `meet_`   | PM, charters, decisions         |
-| 6 | Library      | think_xfiles_archive          | `think_`  | Research, memory palace         |
-| 7 | Billiard Rm  | priv_smoking_room             | `priv_`   | Private deliberation            |
-| 8 | Ballroom     | pitch_syndicate_boardroom     | `pitch_`  | Big picture, long arcs          |
-| 9 | Dining Room  | retro_unremarkable_house      | `retro_`  | Personal writing, retrospective |
-| — | Vestibule    | the-vestibule                 | —         | Global config (this room)       |
+| # | Clue Room    | X-Files Room                   | Prefix            | Function                                    |
+|---|--------------|-------------------------------|------------------|--------------------------------------------|
+| 1 | Hall         | communicating_hoover_corridor | `communicating_` | Routing, inboxes, intake                   |
+| 2 | Study        | synthesizing_basement_office  | `synthesizing_`  | Active investigation, current work         |
+| 3 | Kitchen      | iterating_lone_gunmen_bunker  | `iterating_`     | Code, builds, infrastructure               |
+| 4 | Conservatory | releasing_autopsy_bay         | `releasing_`     | Analysis, close reading, forensics         |
+| 5 | Lounge       | deliberating_skinners_office  | `deliberating_`  | PM, charters, decisions                    |
+| 6 | Library      | researching_xfiles_archive    | `researching_`   | Research, references, memory palace        |
+| 7 | Billiard Room | brainstorming_smoking_room    | `brainstorming_` | Private deliberation, not ready to surface |
+| 8 | Ballroom     | pitching_syndicate_boardroom  | `pitching_`      | Big picture, long arcs, BizDev             |
+| 9 | Dining Room  | planning_unremarkable_house   | `planning_`      | Personal writing, origin material          |
+| — | Vestibule    | the-vestibule                 | —                | Global config, characters, rules (room 10) |
 
 ---
 
