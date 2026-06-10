@@ -7,55 +7,55 @@
   "room_map": [
     {
       "clue": "Hall",
-      "name": "communicating_stage_door",
+      "name": "communicating_hall",
       "prefix": "communicating_",
       "function": "Routing, intake, first impressions"
     },
     {
       "clue": "Study",
-      "name": "synthesizing_kermits_office",
+      "name": "synthesizing_study",
       "prefix": "synthesizing_",
       "function": "Active work, direction, the show must go on"
     },
     {
       "clue": "Kitchen",
-      "name": "iterating_backstage",
+      "name": "iterating_kitchen",
       "prefix": "iterating_",
       "function": "Infrastructure, logistics, chaos management"
     },
     {
       "clue": "Conservatory",
-      "name": "releasing_orchestra_pit",
+      "name": "releasing_conservatory",
       "prefix": "releasing_",
-      "function": "Pair work, rehearsal, ensemble effort"
+      "function": "Handoffs, pairing, deployments \u2014 work crossing a threshold to another context"
     },
     {
       "clue": "Lounge",
-      "name": "deliberating_green_room",
+      "name": "deliberating_lounge",
       "prefix": "deliberating_",
       "function": "Decisions, charters, pre-show prep"
     },
     {
       "clue": "Library",
-      "name": "researching_props_department",
+      "name": "researching_library",
       "prefix": "researching_",
       "function": "Research, references, the archive of bits"
     },
     {
       "clue": "Billiard Room",
-      "name": "brainstorming_broom_closet",
+      "name": "brainstorming_billiard_room",
       "prefix": "brainstorming_",
-      "function": "Private deliberation, things not ready for the stage"
+      "function": "Early ideation, half-formed ideas \u2014 generative but not yet ready to surface"
     },
     {
       "clue": "Ballroom",
-      "name": "pitching_the_stage",
+      "name": "pitching_ballroom",
       "prefix": "pitching_",
       "function": "External relations, performance, the big number"
     },
     {
       "clue": "Dining Room",
-      "name": "planning_balcony",
+      "name": "planning_dining_room",
       "prefix": "planning_",
       "function": "Retrospectives, commentary, Statler & Waldorf territory"
     },
@@ -70,32 +70,32 @@
     {
       "clue": "Miss Scarlett",
       "skin": "Kermit the Frog",
-      "role": "CRO — creative director, holds it together, it ain't easy"
+      "role": "CRO \u2014 creative director, holds it together, it ain't easy"
     },
     {
       "clue": "Col. Mustard",
       "skin": "Miss Piggy",
-      "role": "CEO — executive authority, diva energy, karate chop"
+      "role": "CEO \u2014 executive authority, diva energy, karate chop"
     },
     {
       "clue": "Mrs. White",
       "skin": "Fozzie Bear",
-      "role": "CTO — earnest implementation, wocka wocka, tries his best"
+      "role": "CTO \u2014 earnest implementation, wocka wocka, tries his best"
     },
     {
       "clue": "Mr. Green",
       "skin": "Gonzo",
-      "role": "COO — eccentric operations, whatever works, probably fine"
+      "role": "COO \u2014 eccentric operations, whatever works, probably fine"
     },
     {
       "clue": "Mrs. Peacock",
       "skin": "Scooter",
-      "role": "CMO — stage manager, logistics, external comms, go-fer"
+      "role": "CMO \u2014 stage manager, logistics, external comms, go-fer"
     },
     {
       "clue": "Prof. Plum",
       "skin": "Statler & Waldorf",
-      "role": "CSO — commentary from the balcony, context, institutional memory"
+      "role": "CSO \u2014 commentary from the balcony, context, institutional memory"
     }
   ]
 }

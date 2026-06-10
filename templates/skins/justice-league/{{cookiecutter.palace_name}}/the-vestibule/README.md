@@ -31,17 +31,17 @@ DC maps to the Greek pantheon: archetypes before personalities, principles befor
 
 ## Room Map
 
-| # | Clue Room    | Justice League Room             | Prefix            | Function                                                               |
+| # | Room    | Room             | Prefix            | Function                                                               |
 |---|--------------|--------------------------------|------------------|-----------------------------------------------------------------------|
-| 1 | Hall         | communicating_watchtower_bay   | `communicating_` | Routing, inboxes, first watch — who's incoming and why                |
-| 2 | Study        | synthesizing_batcave           | `synthesizing_`  | Active investigation, current work, the case on the wall              |
-| 3 | Kitchen      | iterating_star_labs            | `iterating_`     | Infrastructure, builds, technical support — where the gear lives      |
-| 4 | Conservatory | releasing_fortress_of_solitude | `releasing_`     | Deep analysis, close reading, pair work — the archive and the crystal |
-| 5 | Lounge       | deliberating_round_table       | `deliberating_`  | Decisions, charters, governance — the League convenes                 |
-| 6 | Library      | researching_hall_of_records    | `researching_`   | Research, references, memory — the full mythology                     |
-| 7 | Billiard Room | brainstorming_phantom_zone     | `brainstorming_` | Private deliberation — exiled from view, not ready to surface         |
-| 8 | Ballroom     | pitching_hall_of_justice       | `pitching_`      | External relations, big picture, public-facing — what the world sees  |
-| 9 | Dining Room  | planning_smallville            | `planning_`      | Origin stories, retrospectives, where the hero came from              |
+| 1 | Hall         | communicating_hall   | `communicating_` | Routing, inboxes, first watch — who's incoming and why                |
+| 2 | Study        | synthesizing_study           | `synthesizing_`  | Active investigation, current work, the case on the wall              |
+| 3 | Kitchen      | iterating_kitchen            | `iterating_`     | Infrastructure, builds, technical support — where the gear lives      |
+| 4 | Conservatory | releasing_conservatory | `releasing_`     | Deep analysis, close reading, pair work — the archive and the crystal |
+| 5 | Lounge       | deliberating_lounge       | `deliberating_`  | Decisions, charters, governance — the League convenes                 |
+| 6 | Library      | researching_library    | `researching_`   | Research, references, memory — the full mythology                     |
+| 7 | Billiard Room | brainstorming_billiard_room     | `brainstorming_` | Private deliberation — exiled from view, not ready to surface         |
+| 8 | Ballroom     | pitching_ballroom       | `pitching_`      | External relations, big picture, public-facing — what the world sees  |
+| 9 | Dining Room  | planning_dining_room            | `planning_`      | Origin stories, retrospectives, where the hero came from              |
 | — | Vestibule    | the-vestibule                  | —                | Global config, characters, rules (room 10)                            |
 
 ---

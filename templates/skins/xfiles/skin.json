@@ -7,55 +7,55 @@
   "room_map": [
     {
       "clue": "Hall",
-      "name": "communicating_hoover_corridor",
+      "name": "communicating_hall",
       "prefix": "communicating_",
       "function": "Routing, inboxes, intake"
     },
     {
       "clue": "Study",
-      "name": "synthesizing_basement_office",
+      "name": "synthesizing_study",
       "prefix": "synthesizing_",
       "function": "Active investigation, current work"
     },
     {
       "clue": "Kitchen",
-      "name": "iterating_lone_gunmen_bunker",
+      "name": "iterating_kitchen",
       "prefix": "iterating_",
       "function": "Code, builds, infrastructure"
     },
     {
       "clue": "Conservatory",
-      "name": "releasing_autopsy_bay",
+      "name": "releasing_conservatory",
       "prefix": "releasing_",
-      "function": "Analysis, close reading, forensics"
+      "function": "Handoffs, pairing, deployments \u2014 work crossing a threshold to another context"
     },
     {
       "clue": "Lounge",
-      "name": "deliberating_skinners_office",
+      "name": "deliberating_lounge",
       "prefix": "deliberating_",
       "function": "PM, charters, decisions"
     },
     {
       "clue": "Library",
-      "name": "researching_xfiles_archive",
+      "name": "researching_library",
       "prefix": "researching_",
       "function": "Research, references, memory palace"
     },
     {
       "clue": "Billiard Room",
-      "name": "brainstorming_smoking_room",
+      "name": "brainstorming_billiard_room",
       "prefix": "brainstorming_",
-      "function": "Private deliberation, not ready to surface"
+      "function": "Early ideation, half-formed ideas \u2014 generative but not yet ready to surface"
     },
     {
       "clue": "Ballroom",
-      "name": "pitching_syndicate_boardroom",
+      "name": "pitching_ballroom",
       "prefix": "pitching_",
       "function": "Big picture, long arcs, BizDev"
     },
     {
       "clue": "Dining Room",
-      "name": "planning_unremarkable_house",
+      "name": "planning_dining_room",
       "prefix": "planning_",
       "function": "Personal writing, origin material"
     },
@@ -70,32 +70,32 @@
     {
       "clue": "Miss Scarlett",
       "skin": "Fox Mulder",
-      "role": "Chief Research Officer — investigation, hunches, deep intel"
+      "role": "Chief Research Officer \u2014 investigation, hunches, deep intel"
     },
     {
       "clue": "Colonel Mustard",
       "skin": "Walter Skinner",
-      "role": "CEO — strategic oversight, final sign-off, gatekeeper"
+      "role": "CEO \u2014 strategic oversight, final sign-off, gatekeeper"
     },
     {
       "clue": "Mrs. White",
       "skin": "Dana Scully",
-      "role": "CTO — implementation, technical validation, material evidence"
+      "role": "CTO \u2014 implementation, technical validation, material evidence"
     },
     {
       "clue": "Mr. Green",
       "skin": "The Lone Gunmen",
-      "role": "COO — ops, builds, infrastructure, social support"
+      "role": "COO \u2014 ops, builds, infrastructure, social support"
     },
     {
       "clue": "Mrs. Peacock",
       "skin": "Alex Krycek",
-      "role": "CMO — channel management, double-agent logistics, external liaisons"
+      "role": "CMO \u2014 channel management, double-agent logistics, external liaisons"
     },
     {
       "clue": "Professor Plum",
       "skin": "The Cigarette Smoking Man",
-      "role": "CSO — context & state, cross-modality persistence, the shadows"
+      "role": "CSO \u2014 context & state, cross-modality persistence, the shadows"
     }
   ]
 }

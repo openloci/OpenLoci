@@ -30,17 +30,17 @@ The DM is the LLM. The player is the founder. Not a bug, a pivot.
 
 ## Room Map
 
-| # | Clue Room    | Silicon Valley Room            | Prefix            | Function                                    |
+| # | Room    | Room            | Prefix            | Function                                    |
 |---|--------------|-------------------------------|------------------|--------------------------------------------|
-| 1 | Hall         | communicating_incubator_lobby | `communicating_` | Routing, intake, first impressions         |
-| 2 | Study        | synthesizing_garage           | `synthesizing_`  | Active dev, core product work              |
-| 3 | Kitchen      | iterating_server_room         | `iterating_`     | Infrastructure, DevOps, systems            |
-| 4 | Conservatory | releasing_open_space          | `releasing_`     | Pair work, collaboration, standups         |
-| 5 | Lounge       | deliberating_conference_room  | `deliberating_`  | Decisions, charters, planning              |
-| 6 | Library      | researching_whiteboard_room   | `researching_`   | Research, design, specs                    |
-| 7 | Billiard Room | brainstorming_stealth_mode    | `brainstorming_` | Sensitive strategy, not ready to surface   |
-| 8 | Ballroom     | pitching_sand_hill_road       | `pitching_`      | BizDev, fundraising, external relations    |
-| 9 | Dining Room  | planning_rooftop              | `planning_`      | After-hours, decompression, retrospective  |
+| 1 | Hall         | communicating_hall | `communicating_` | Routing, intake, first impressions         |
+| 2 | Study        | synthesizing_study           | `synthesizing_`  | Active dev, core product work              |
+| 3 | Kitchen      | iterating_kitchen         | `iterating_`     | Infrastructure, DevOps, systems            |
+| 4 | Conservatory | releasing_conservatory          | `releasing_`     | Pair work, collaboration, standups         |
+| 5 | Lounge       | deliberating_lounge  | `deliberating_`  | Decisions, charters, planning              |
+| 6 | Library      | researching_library   | `researching_`   | Research, design, specs                    |
+| 7 | Billiard Room | brainstorming_billiard_room    | `brainstorming_` | Sensitive strategy, not ready to surface   |
+| 8 | Ballroom     | pitching_ballroom       | `pitching_`      | BizDev, fundraising, external relations    |
+| 9 | Dining Room  | planning_dining_room              | `planning_`      | After-hours, decompression, retrospective  |
 | — | Vestibule    | the-vestibule                 | —                | Global config, characters, rules (room 10) |
 
 ---

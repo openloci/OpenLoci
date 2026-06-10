@@ -1,6 +1,6 @@
 {
   "name": "clue",
-  "description": "The original Clue chassis. No overlay — just the Tudor mansion and its suspects.",
+  "description": "The original Clue chassis. No overlay \u2014 just the Tudor mansion and its suspects.",
   "chassis": "clue",
   "game_type": "finite",
   "rooms": "9 + Vestibule",
@@ -27,7 +27,7 @@
       "clue": "Conservatory",
       "name": "releasing_conservatory",
       "prefix": "releasing_",
-      "function": "Pair work, close analysis, collaboration"
+      "function": "Handoffs, pairing, deployments \u2014 work crossing a threshold to another context"
     },
     {
       "clue": "Lounge",
@@ -45,7 +45,7 @@
       "clue": "Billiard Room",
       "name": "brainstorming_billiard_room",
       "prefix": "brainstorming_",
-      "function": "Private deliberation, not ready to surface"
+      "function": "Early ideation, half-formed ideas \u2014 generative but not yet ready to surface"
     },
     {
       "clue": "Ballroom",
@@ -70,32 +70,32 @@
     {
       "clue": "Miss Scarlett",
       "skin": "Miss Scarlett",
-      "role": "CRO — investigation lead, hunches, drives the case forward"
+      "role": "CRO \u2014 investigation lead, hunches, drives the case forward"
     },
     {
       "clue": "Col. Mustard",
       "skin": "Col. Mustard",
-      "role": "CEO — strategic authority, final sign-off, military bearing"
+      "role": "CEO \u2014 strategic authority, final sign-off, military bearing"
     },
     {
       "clue": "Mrs. White",
       "skin": "Mrs. White",
-      "role": "CTO — implementation, household knowledge, sees everything"
+      "role": "CTO \u2014 implementation, household knowledge, sees everything"
     },
     {
       "clue": "Mr. Green",
       "skin": "Mr. Green",
-      "role": "COO — operations, moral compass, keeps the lights on"
+      "role": "COO \u2014 operations, moral compass, keeps the lights on"
     },
     {
       "clue": "Mrs. Peacock",
       "skin": "Mrs. Peacock",
-      "role": "CMO — society connections, external liaisons, channel management"
+      "role": "CMO \u2014 society connections, external liaisons, channel management"
     },
     {
       "clue": "Prof. Plum",
       "skin": "Prof. Plum",
-      "role": "CSO — context, long arcs, academic eccentricity, the shadows"
+      "role": "CSO \u2014 context, long arcs, academic eccentricity, the shadows"
     }
   ]
 }

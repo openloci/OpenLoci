@@ -30,7 +30,7 @@ The DM is the LLM. The player is the investigator. The mystery may or may not ha
 
 ## Room Map
 
-| # | Clue Room    | Clue Room                    | Prefix            | Function                                           |
+| # | Room    | Room                    | Prefix            | Function                                           |
 |---|--------------|-----------------------------|------------------|---------------------------------------------------|
 | 1 | Hall         | communicating_hall          | `communicating_` | Routing, inboxes, intake                          |
 | 2 | Study        | synthesizing_study          | `synthesizing_`  | Active work, deep focus                           |
