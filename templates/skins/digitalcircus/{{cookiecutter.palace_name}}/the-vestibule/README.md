@@ -30,17 +30,17 @@ The DM is the LLM. The player is the investigator. Abstraction risk is real. Kee
 
 ## Room Map
 
-| # | Clue Room    | Digital Circus Room             | Prefix            | Function                                                 |
+| # | Room    | Room             | Prefix            | Function                                                 |
 |---|--------------|--------------------------------|------------------|---------------------------------------------------------|
-| 1 | Hall         | communicating_big_top_entrance | `communicating_` | Routing, intake, where new arrivals land                |
-| 2 | Study        | synthesizing_control_room      | `synthesizing_`  | Active work, Caine's domain, where things are made      |
-| 3 | Kitchen      | iterating_candy_workshop       | `iterating_`     | Infrastructure, systems, the machinery of the circus    |
-| 4 | Conservatory | releasing_glitch_garden        | `releasing_`     | Pair work, collaboration, unpredictable terrain         |
-| 5 | Lounge       | deliberating_audience_seats    | `deliberating_`  | Decisions, charters, where watchers become participants |
-| 6 | Library      | researching_abstract_archive   | `researching_`   | Research, memory, the records of who was here before    |
-| 7 | Billiard Room | brainstorming_the_void         | `brainstorming_` | Private deliberation, abstraction risk, the unformed    |
-| 8 | Ballroom     | pitching_main_ring             | `pitching_`      | External relations, performance, the center of the show |
-| 9 | Dining Room  | planning_break_room            | `planning_`      | Retrospectives, decompression, where masks come off     |
+| 1 | Hall         | communicating_hall | `communicating_` | Routing, intake, where new arrivals land                |
+| 2 | Study        | synthesizing_study      | `synthesizing_`  | Active work, Caine's domain, where things are made      |
+| 3 | Kitchen      | iterating_kitchen       | `iterating_`     | Infrastructure, systems, the machinery of the circus    |
+| 4 | Conservatory | releasing_conservatory        | `releasing_`     | Pair work, collaboration, unpredictable terrain         |
+| 5 | Lounge       | deliberating_lounge    | `deliberating_`  | Decisions, charters, where watchers become participants |
+| 6 | Library      | researching_library   | `researching_`   | Research, memory, the records of who was here before    |
+| 7 | Billiard Room | brainstorming_billiard_room         | `brainstorming_` | Private deliberation, abstraction risk, the unformed    |
+| 8 | Ballroom     | pitching_ballroom             | `pitching_`      | External relations, performance, the center of the show |
+| 9 | Dining Room  | planning_dining_room            | `planning_`      | Retrospectives, decompression, where masks come off     |
 | — | Vestibule    | the-vestibule                  | —                | Global config, characters, rules (room 10)              |
 
 ---

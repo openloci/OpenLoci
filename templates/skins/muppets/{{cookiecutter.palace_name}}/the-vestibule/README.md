@@ -30,17 +30,17 @@ The DM is the LLM. The player is the investigator. It ain't easy being green.
 
 ## Room Map
 
-| # | Clue Room    | Muppets Room                  | Prefix            | Function                                                 |
+| # | Room    | Room                  | Prefix            | Function                                                 |
 |---|--------------|------------------------------|------------------|---------------------------------------------------------|
-| 1 | Hall         | communicating_stage_door     | `communicating_` | Routing, intake, first impressions                      |
-| 2 | Study        | synthesizing_kermits_office  | `synthesizing_`  | Active work, direction, the show must go on             |
-| 3 | Kitchen      | iterating_backstage          | `iterating_`     | Infrastructure, logistics, chaos management             |
-| 4 | Conservatory | releasing_orchestra_pit      | `releasing_`     | Pair work, rehearsal, ensemble effort                   |
-| 5 | Lounge       | deliberating_green_room      | `deliberating_`  | Decisions, charters, pre-show prep                      |
-| 6 | Library      | researching_props_department | `researching_`   | Research, references, the archive of bits               |
-| 7 | Billiard Room | brainstorming_broom_closet   | `brainstorming_` | Private deliberation, things not ready for the stage    |
-| 8 | Ballroom     | pitching_the_stage           | `pitching_`      | External relations, performance, the big number         |
-| 9 | Dining Room  | planning_balcony             | `planning_`      | Retrospectives, commentary, Statler & Waldorf territory |
+| 1 | Hall         | communicating_hall     | `communicating_` | Routing, intake, first impressions                      |
+| 2 | Study        | synthesizing_study  | `synthesizing_`  | Active work, direction, the show must go on             |
+| 3 | Kitchen      | iterating_kitchen          | `iterating_`     | Infrastructure, logistics, chaos management             |
+| 4 | Conservatory | releasing_conservatory      | `releasing_`     | Pair work, rehearsal, ensemble effort                   |
+| 5 | Lounge       | deliberating_lounge      | `deliberating_`  | Decisions, charters, pre-show prep                      |
+| 6 | Library      | researching_library | `researching_`   | Research, references, the archive of bits               |
+| 7 | Billiard Room | brainstorming_billiard_room   | `brainstorming_` | Private deliberation, things not ready for the stage    |
+| 8 | Ballroom     | pitching_ballroom           | `pitching_`      | External relations, performance, the big number         |
+| 9 | Dining Room  | planning_dining_room             | `planning_`      | Retrospectives, commentary, Statler & Waldorf territory |
 | — | Vestibule    | the-vestibule                | —                | Global config, characters, rules (room 10)              |
 
 ---

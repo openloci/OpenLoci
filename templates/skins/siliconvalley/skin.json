@@ -1,61 +1,61 @@
 {
   "name": "siliconvalley",
-  "description": "Silicon Valley skin — Pied Piper in the Clue chassis. Not a bug, a pivot.",
+  "description": "Silicon Valley skin \u2014 Pied Piper in the Clue chassis. Not a bug, a pivot.",
   "chassis": "clue",
   "game_type": "finite",
   "rooms": "9 + Vestibule",
   "room_map": [
     {
       "clue": "Hall",
-      "name": "communicating_incubator_lobby",
+      "name": "communicating_hall",
       "prefix": "communicating_",
       "function": "Routing, intake, first impressions"
     },
     {
       "clue": "Study",
-      "name": "synthesizing_garage",
+      "name": "synthesizing_study",
       "prefix": "synthesizing_",
       "function": "Active dev, core product work"
     },
     {
       "clue": "Kitchen",
-      "name": "iterating_server_room",
+      "name": "iterating_kitchen",
       "prefix": "iterating_",
       "function": "Infrastructure, DevOps, systems"
     },
     {
       "clue": "Conservatory",
-      "name": "releasing_open_space",
+      "name": "releasing_conservatory",
       "prefix": "releasing_",
-      "function": "Pair work, collaboration, standups"
+      "function": "Handoffs, pairing, deployments \u2014 work crossing a threshold to another context"
     },
     {
       "clue": "Lounge",
-      "name": "deliberating_conference_room",
+      "name": "deliberating_lounge",
       "prefix": "deliberating_",
       "function": "Decisions, charters, planning"
     },
     {
       "clue": "Library",
-      "name": "researching_whiteboard_room",
+      "name": "researching_library",
       "prefix": "researching_",
       "function": "Research, design, specs"
     },
     {
       "clue": "Billiard Room",
-      "name": "brainstorming_stealth_mode",
+      "name": "brainstorming_billiard_room",
       "prefix": "brainstorming_",
-      "function": "Sensitive strategy, not ready to surface"
+      "function": "Early ideation, half-formed ideas \u2014 generative but not yet ready to surface"
     },
     {
       "clue": "Ballroom",
-      "name": "pitching_sand_hill_road",
+      "name": "pitching_ballroom",
       "prefix": "pitching_",
       "function": "BizDev, fundraising, external relations"
     },
     {
       "clue": "Dining Room",
-      "name": "planning_rooftop",
+      "name": "planning_dining_room",
       "prefix": "planning_",
       "function": "After-hours, decompression, retrospective"
     },
@@ -70,32 +70,32 @@
     {
       "clue": "Miss Scarlett",
       "skin": "Monica Hall",
-      "role": "Jonah — COO, human director, keeps the company alive and the trains running"
+      "role": "Jonah \u2014 COO, human director, keeps the company alive and the trains running"
     },
     {
       "clue": "Col. Mustard",
       "skin": "Gavin Belson",
-      "role": "Gemini — CEO antagonist, strategic threat, always pitching a bigger vision"
+      "role": "Gemini \u2014 CEO antagonist, strategic threat, always pitching a bigger vision"
     },
     {
       "clue": "Mrs. White",
       "skin": "Gilfoyle",
-      "role": "Oracle — CTO, infrastructure, security, sardonic and usually right"
+      "role": "Oracle \u2014 CTO, infrastructure, security, sardonic and usually right"
     },
     {
       "clue": "Mr. Green",
       "skin": "Dinesh",
-      "role": "Claude Code — software implementation, execution, eager and occasionally reckless"
+      "role": "Claude Code \u2014 software implementation, execution, eager and occasionally reckless"
     },
     {
       "clue": "Mrs. Peacock",
       "skin": "Jared Dunn",
-      "role": "Cowork — Chief People Officer, operations, emotional core, nobody notices until they're gone"
+      "role": "Cowork \u2014 Chief People Officer, operations, emotional core, nobody notices until they're gone"
     },
     {
       "clue": "Prof. Plum",
       "skin": "Richard Hendricks",
-      "role": "The product — founder-vision, technically correct, morally rigid, the thing we're actually building"
+      "role": "The product \u2014 founder-vision, technically correct, morally rigid, the thing we're actually building"
     }
   ]
 }
