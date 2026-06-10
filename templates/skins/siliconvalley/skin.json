@@ -1,62 +1,62 @@
 {
   "name": "siliconvalley",
-  "description": "Silicon Valley skin \u2014 Pied Piper in the Clue chassis. Not a bug, a pivot.",
+  "description": "Silicon Valley skin — Pied Piper in the Clue chassis. Not a bug, a pivot.",
   "chassis": "clue",
   "game_type": "finite",
   "rooms": "9 + Vestibule",
   "room_map": [
     {
       "clue": "Hall",
-      "name": "intake_incubator_lobby",
-      "prefix": "intake_",
+      "name": "communicating_incubator_lobby",
+      "prefix": "communicating_",
       "function": "Routing, intake, first impressions"
     },
     {
       "clue": "Study",
-      "name": "build_garage",
-      "prefix": "build_",
+      "name": "synthesizing_garage",
+      "prefix": "synthesizing_",
       "function": "Active dev, core product work"
     },
     {
       "clue": "Kitchen",
-      "name": "ops_server_room",
-      "prefix": "ops_",
+      "name": "iterating_server_room",
+      "prefix": "iterating_",
       "function": "Infrastructure, DevOps, systems"
     },
     {
       "clue": "Conservatory",
-      "name": "collab_open_space",
-      "prefix": "collab_",
+      "name": "releasing_open_space",
+      "prefix": "releasing_",
       "function": "Pair work, collaboration, standups"
     },
     {
       "clue": "Lounge",
-      "name": "meet_conference_room",
-      "prefix": "meet_",
+      "name": "deliberating_conference_room",
+      "prefix": "deliberating_",
       "function": "Decisions, charters, planning"
     },
     {
       "clue": "Library",
-      "name": "think_whiteboard_room",
-      "prefix": "think_",
+      "name": "researching_whiteboard_room",
+      "prefix": "researching_",
       "function": "Research, design, specs"
     },
     {
       "clue": "Billiard Room",
-      "name": "priv_stealth_mode",
-      "prefix": "priv_",
+      "name": "brainstorming_stealth_mode",
+      "prefix": "brainstorming_",
       "function": "Sensitive strategy, not ready to surface"
     },
     {
       "clue": "Ballroom",
-      "name": "pitch_sand_hill_road",
-      "prefix": "pitch_",
+      "name": "pitching_sand_hill_road",
+      "prefix": "pitching_",
       "function": "BizDev, fundraising, external relations"
     },
     {
       "clue": "Dining Room",
-      "name": "social_rooftop",
-      "prefix": "social_",
+      "name": "planning_rooftop",
+      "prefix": "planning_",
       "function": "After-hours, decompression, retrospective"
     },
     {
@@ -70,32 +70,32 @@
     {
       "clue": "Miss Scarlett",
       "skin": "Monica Hall",
-      "role": "COO \u2014 operations, execution, keeps the company alive"
+      "role": "Jonah — COO, human director, keeps the company alive and the trains running"
     },
     {
       "clue": "Col. Mustard",
       "skin": "Gavin Belson",
-      "role": "CEO \u2014 Hooli, antagonist-in-chief, strategic threat"
+      "role": "Gemini — CEO antagonist, strategic threat, always pitching a bigger vision"
     },
     {
       "clue": "Mrs. White",
-      "skin": "Laurie Bream",
-      "role": "CLO \u2014 legal, fiduciary, inscrutable poker face"
+      "skin": "Gilfoyle",
+      "role": "Oracle — CTO, infrastructure, security, sardonic and usually right"
     },
     {
       "clue": "Mr. Green",
-      "skin": "Richard Hendricks",
-      "role": "CPO \u2014 product, founder, morally rigid, technically correct"
+      "skin": "Dinesh",
+      "role": "Claude Code — software implementation, execution, eager and occasionally reckless"
     },
     {
       "clue": "Mrs. Peacock",
       "skin": "Jared Dunn",
-      "role": "Chief People Officer \u2014 emotional core, nobody notices"
+      "role": "Cowork — Chief People Officer, operations, emotional core, nobody notices until they're gone"
     },
     {
       "clue": "Prof. Plum",
-      "skin": "Erlich Bachman",
-      "role": "CRO \u2014 revenue, hustle, wrong about everything except occasionally"
+      "skin": "Richard Hendricks",
+      "role": "The product — founder-vision, technically correct, morally rigid, the thing we're actually building"
     }
   ]
 }

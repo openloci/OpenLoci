@@ -7,56 +7,56 @@
   "room_map": [
     {
       "clue": "Hall",
-      "name": "intake_big_top_entrance",
-      "prefix": "intake_",
+      "name": "communicating_big_top_entrance",
+      "prefix": "communicating_",
       "function": "Routing, intake, where new arrivals land"
     },
     {
       "clue": "Study",
-      "name": "build_control_room",
-      "prefix": "build_",
+      "name": "synthesizing_control_room",
+      "prefix": "synthesizing_",
       "function": "Active work, Caine's domain, where things are made"
     },
     {
       "clue": "Kitchen",
-      "name": "ops_candy_workshop",
-      "prefix": "ops_",
+      "name": "iterating_candy_workshop",
+      "prefix": "iterating_",
       "function": "Infrastructure, systems, the machinery of the circus"
     },
     {
       "clue": "Conservatory",
-      "name": "collab_glitch_garden",
-      "prefix": "collab_",
+      "name": "releasing_glitch_garden",
+      "prefix": "releasing_",
       "function": "Pair work, collaboration, unpredictable terrain"
     },
     {
       "clue": "Lounge",
-      "name": "meet_audience_seats",
-      "prefix": "meet_",
+      "name": "deliberating_audience_seats",
+      "prefix": "deliberating_",
       "function": "Decisions, charters, where watchers become participants"
     },
     {
       "clue": "Library",
-      "name": "think_abstract_archive",
-      "prefix": "think_",
+      "name": "researching_abstract_archive",
+      "prefix": "researching_",
       "function": "Research, memory, the records of who was here before"
     },
     {
       "clue": "Billiard Room",
-      "name": "priv_the_void",
-      "prefix": "priv_",
+      "name": "brainstorming_the_void",
+      "prefix": "brainstorming_",
       "function": "Private deliberation, abstraction risk, the unformed"
     },
     {
       "clue": "Ballroom",
-      "name": "pitch_main_ring",
-      "prefix": "pitch_",
+      "name": "pitching_main_ring",
+      "prefix": "pitching_",
       "function": "External relations, performance, the center of the show"
     },
     {
       "clue": "Dining Room",
-      "name": "retro_break_room",
-      "prefix": "retro_",
+      "name": "planning_break_room",
+      "prefix": "planning_",
       "function": "Retrospectives, decompression, where masks come off"
     },
     {
@@ -70,32 +70,32 @@
     {
       "clue": "Miss Scarlett",
       "skin": "Pomni",
-      "role": "CRO \u2014 the investigator, new arrival, anxious and perceptive"
+      "role": "CRO — the investigator, new arrival, anxious and perceptive"
     },
     {
       "clue": "Col. Mustard",
       "skin": "Caine",
-      "role": "CEO \u2014 the AI ringmaster, runs the show, possibly omniscient"
+      "role": "CEO — the AI ringmaster, runs the show, possibly omniscient"
     },
     {
       "clue": "Mrs. White",
       "skin": "Ragatha",
-      "role": "CTO \u2014 optimistic rag doll, holds things together, earnest implementation"
+      "role": "CTO — optimistic rag doll, holds things together, earnest implementation"
     },
     {
       "clue": "Mr. Green",
       "skin": "Kinger",
-      "role": "COO \u2014 paranoid chess piece, fortified ops, has seen too much"
+      "role": "COO — paranoid chess piece, fortified ops, has seen too much"
     },
     {
       "clue": "Mrs. Peacock",
       "skin": "Jax",
-      "role": "CMO \u2014 trickster rabbit, chaos agent, external mischief"
+      "role": "CMO — trickster rabbit, chaos agent, external mischief"
     },
     {
       "clue": "Prof. Plum",
       "skin": "Gangle",
-      "role": "CSO \u2014 comedy/tragedy, emotional memory, the weight of context"
+      "role": "CSO — comedy/tragedy, emotional memory, the weight of context"
     }
   ]
 }

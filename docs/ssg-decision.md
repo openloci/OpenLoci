@@ -86,7 +86,7 @@ Example session note frontmatter:
 ---
 title: "Tax Day — Extensions Filed"
 date: 2026-04-15
-palace_room: retro
+palace_room: planning_dining_room
 character: fox
 phase: debrief
 skin: xfiles

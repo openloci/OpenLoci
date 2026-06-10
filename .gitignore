@@ -37,3 +37,6 @@ docs/resources/
 
 # ignore claude artifacts
 .fuse_hidden*
+
+# ignore uv lock
+uv.lock

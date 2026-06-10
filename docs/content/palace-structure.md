@@ -15,16 +15,16 @@ my-palace/
 │   ├── Principles/
 │   │   └── master_prompt.md  ← DM instructions for LLM sessions
 │   └── Journal/            ← Hugo site for rendering session notes
-└── the-palace/             ← nine rooms, prefixed by function
-    ├── intake_*/
-    ├── build_*/
-    ├── ops_*/
-    ├── collab_*/
-    ├── meet_*/
-    ├── think_*/
-    ├── priv_*/
-    ├── pitch_*/
-    └── retro_*/
+└── the-mansion/            ← nine rooms, prefixed by function
+    ├── communicating_*/
+    ├── synthesizing_*/
+    ├── iterating_*/
+    ├── releasing_*/
+    ├── deliberating_*/
+    ├── researching_*/
+    ├── brainstorming_*/
+    ├── pitching_*/
+    └── planning_*/
 ```
 
 ---
@@ -33,19 +33,19 @@ my-palace/
 
 Two parallel prefix systems make the palace self-documenting across any skin:
 
-**Room prefixes** — functional labels that survive skin changes. The room does what its prefix says regardless of whether it's called "The Basement Office" or "The Garage."
+**Room prefixes** — gerund labels that name the *activity*, not the place. The room does what its prefix says regardless of whether it's called "The Basement Office" or "The Garage." Prefixes are derived from the Kabbalistic Tree of Life: each room corresponds to one of the nine lower Sefirot, with the estate itself as Malkuth.
 
-| Prefix | Clue Room | Function |
-|--------|-----------|----------|
-| `intake_` | Hall | Inboxes, routing, triage |
-| `build_` | Study | Active work, deep focus |
-| `ops_` | Kitchen | Infrastructure, DevOps, builds |
-| `collab_` | Conservatory | Pair work, implementation |
-| `meet_` | Lounge | Decisions, charters, project management |
-| `think_` | Library | Research, references, memory |
-| `priv_` | Billiard Room | Private deliberation |
-| `pitch_` | Ballroom | BizDev, external relations, presentations |
-| `retro_` | Dining Room | Retrospectives, personal writing |
+| Prefix | Clue Room | Sefirah | Function |
+|--------|-----------|---------|----------|
+| `communicating_` | Hall | Tiferet | Inboxes, routing, the hub where all paths meet |
+| `synthesizing_` | Study | Binah | Original writing, theory, deep focus work |
+| `iterating_` | Kitchen | Hod | Infrastructure, DevOps, builds — where things get cooked |
+| `releasing_` | Conservatory | Yesod | Airlock — release notes, changelogs, almost-prod docs |
+| `deliberating_` | Lounge | Gevurah | Retros, grooming, blameless retrospection |
+| `researching_` | Library | Chokhmah | External sources, references, links, the flash of outside insight |
+| `brainstorming_` | Billiard Room | Keter | Private ideation, unformed will, not ready to surface |
+| `pitching_` | Ballroom | Netzach | BizDev, investor decks, external relations — the grandest room |
+| `planning_` | Dining Room | Chesed | Specs, PRDs, sprint charters — expanding the plan before Gevurah cuts |
 
 Each room has a `README.md` with YAML frontmatter describing its purpose and atmosphere within the current skin.
 
@@ -87,7 +87,7 @@ Every significant file in a palace uses YAML frontmatter for metadata. The conve
 ---
 title: "Session Title"
 date: 2026-04-20
-palace_room: build_study
+palace_room: synthesizing_study
 character: moulder
 phase: active
 skin: xfiles
@@ -101,12 +101,12 @@ The `session_type`, `phase`, and `skin` vocabularies are defined in `the-vestibu
 
 ---
 
-## Intake Conventions
+## Communicating Room Conventions
 
-Each room's `intake_*/` directory follows a shared inbox convention:
+The `communicating_*/` room (Hall) follows a shared inbox convention:
 
 ```
-intake_hall/
+communicating_hall/
 ├── README.md
 ├── inbox_{character}/     ← per-character inboxes
 │   └── handoff_{from}_{date}.md

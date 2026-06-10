@@ -30,18 +30,18 @@ The DM is the LLM. The player is the investigator. The mystery may or may not ha
 
 ## Room Map
 
-| # | Clue Room    | Palace Room            | Prefix     | Function                           |
-|---|--------------|------------------------|------------|------------------------------------|
-| 1 | Hall         | intake_hall            | `intake_`  | Routing, inboxes, intake           |
-| 2 | Study        | build_study            | `build_`   | Active work, deep focus            |
-| 3 | Kitchen      | ops_kitchen            | `ops_`     | Infrastructure, systems            |
-| 4 | Conservatory | collab_conservatory    | `collab_`  | Pair work, analysis                |
-| 5 | Lounge       | meet_lounge            | `meet_`    | Decisions, charters, PM            |
-| 6 | Library      | think_library          | `think_`   | Research, memory palace            |
-| 7 | Billiard Rm  | priv_billiard_room     | `priv_`    | Private deliberation               |
-| 8 | Ballroom     | pitch_ballroom         | `pitch_`   | External relations, big picture    |
-| 9 | Dining Room  | retro_dining_room      | `retro_`   | Retrospectives, personal writing   |
-| — | Vestibule    | the-vestibule          | —          | Global config (this room)          |
+| # | Clue Room    | Clue Room                    | Prefix            | Function                                           |
+|---|--------------|-----------------------------|------------------|---------------------------------------------------|
+| 1 | Hall         | communicating_hall          | `communicating_` | Routing, inboxes, intake                          |
+| 2 | Study        | synthesizing_study          | `synthesizing_`  | Active work, deep focus                           |
+| 3 | Kitchen      | iterating_kitchen           | `iterating_`     | Infrastructure, systems, devops                   |
+| 4 | Conservatory | releasing_conservatory      | `releasing_`     | Pair work, close analysis, collaboration          |
+| 5 | Lounge       | deliberating_lounge         | `deliberating_`  | Decisions, charters, PM                           |
+| 6 | Library      | researching_library         | `researching_`   | Research, references, memory palace               |
+| 7 | Billiard Room | brainstorming_billiard_room | `brainstorming_` | Private deliberation, not ready to surface        |
+| 8 | Ballroom     | pitching_ballroom           | `pitching_`      | External relations, big picture, BizDev           |
+| 9 | Dining Room  | planning_dining_room        | `planning_`      | Retrospectives, personal writing, origin material |
+| — | Vestibule    | the-vestibule               | —                | Global config, characters, rules (room 10)        |
 
 ---
 

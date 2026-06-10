@@ -1,62 +1,62 @@
 {
   "name": "clue",
-  "description": "The original Clue chassis. No overlay \u2014 just the Tudor mansion and its suspects.",
+  "description": "The original Clue chassis. No overlay — just the Tudor mansion and its suspects.",
   "chassis": "clue",
   "game_type": "finite",
   "rooms": "9 + Vestibule",
   "room_map": [
     {
       "clue": "Hall",
-      "name": "intake_hall",
-      "prefix": "intake_",
+      "name": "communicating_hall",
+      "prefix": "communicating_",
       "function": "Routing, inboxes, intake"
     },
     {
       "clue": "Study",
-      "name": "build_study",
-      "prefix": "build_",
+      "name": "synthesizing_study",
+      "prefix": "synthesizing_",
       "function": "Active work, deep focus"
     },
     {
       "clue": "Kitchen",
-      "name": "ops_kitchen",
-      "prefix": "ops_",
+      "name": "iterating_kitchen",
+      "prefix": "iterating_",
       "function": "Infrastructure, systems, devops"
     },
     {
       "clue": "Conservatory",
-      "name": "collab_conservatory",
-      "prefix": "collab_",
+      "name": "releasing_conservatory",
+      "prefix": "releasing_",
       "function": "Pair work, close analysis, collaboration"
     },
     {
       "clue": "Lounge",
-      "name": "meet_lounge",
-      "prefix": "meet_",
+      "name": "deliberating_lounge",
+      "prefix": "deliberating_",
       "function": "Decisions, charters, PM"
     },
     {
       "clue": "Library",
-      "name": "think_library",
-      "prefix": "think_",
+      "name": "researching_library",
+      "prefix": "researching_",
       "function": "Research, references, memory palace"
     },
     {
       "clue": "Billiard Room",
-      "name": "priv_billiard_room",
-      "prefix": "priv_",
+      "name": "brainstorming_billiard_room",
+      "prefix": "brainstorming_",
       "function": "Private deliberation, not ready to surface"
     },
     {
       "clue": "Ballroom",
-      "name": "pitch_ballroom",
-      "prefix": "pitch_",
+      "name": "pitching_ballroom",
+      "prefix": "pitching_",
       "function": "External relations, big picture, BizDev"
     },
     {
       "clue": "Dining Room",
-      "name": "retro_dining_room",
-      "prefix": "retro_",
+      "name": "planning_dining_room",
+      "prefix": "planning_",
       "function": "Retrospectives, personal writing, origin material"
     },
     {
@@ -70,32 +70,32 @@
     {
       "clue": "Miss Scarlett",
       "skin": "Miss Scarlett",
-      "role": "CRO \u2014 investigation lead, hunches, drives the case forward"
+      "role": "CRO — investigation lead, hunches, drives the case forward"
     },
     {
       "clue": "Col. Mustard",
       "skin": "Col. Mustard",
-      "role": "CEO \u2014 strategic authority, final sign-off, military bearing"
+      "role": "CEO — strategic authority, final sign-off, military bearing"
     },
     {
       "clue": "Mrs. White",
       "skin": "Mrs. White",
-      "role": "CTO \u2014 implementation, household knowledge, sees everything"
+      "role": "CTO — implementation, household knowledge, sees everything"
     },
     {
       "clue": "Mr. Green",
       "skin": "Mr. Green",
-      "role": "COO \u2014 operations, moral compass, keeps the lights on"
+      "role": "COO — operations, moral compass, keeps the lights on"
     },
     {
       "clue": "Mrs. Peacock",
       "skin": "Mrs. Peacock",
-      "role": "CMO \u2014 society connections, external liaisons, channel management"
+      "role": "CMO — society connections, external liaisons, channel management"
     },
     {
       "clue": "Prof. Plum",
       "skin": "Prof. Plum",
-      "role": "CSO \u2014 context, long arcs, academic eccentricity, the shadows"
+      "role": "CSO — context, long arcs, academic eccentricity, the shadows"
     }
   ]
 }
