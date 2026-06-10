@@ -1,5 +1,5 @@
 ---
-title: the-vestibule
+title: the-garden
 type: rules
 classification: unclassified
 skin: digitalcircus
@@ -8,8 +8,8 @@ status: active
 date: {{ cookiecutter.date }}
 ---
 
-# the-vestibule
-*Threshold of {{ cookiecutter.palace_name }}*
+# the-garden
+*Garden of {{ cookiecutter.palace_name }}*
 
 ---
 
@@ -41,13 +41,13 @@ The DM is the LLM. The player is the investigator. Abstraction risk is real. Kee
 | 7 | Billiard Room | brainstorming_billiard_room         | `brainstorming_` | Private deliberation, abstraction risk, the unformed    |
 | 8 | Ballroom     | pitching_ballroom             | `pitching_`      | External relations, performance, the center of the show |
 | 9 | Dining Room  | planning_dining_room            | `planning_`      | Retrospectives, decompression, where masks come off     |
-| — | Vestibule    | the-vestibule                  | —                | Global config, characters, rules (room 10)              |
+| — | Vestibule    | the-garden                  | —                | Global config, characters, rules (room 10)              |
 
 ---
 
 ## To Begin a Session
 
-1. Read `Principles/master_prompt.md`
+1. Read `Rules/master_prompt.md`
 2. Read relevant character card(s) from `Characters/`
 3. Declare your starting room
 4. The DM opens the show

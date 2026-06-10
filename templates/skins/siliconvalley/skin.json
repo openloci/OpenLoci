@@ -61,9 +61,9 @@
     },
     {
       "clue": "Vestibule",
-      "name": "the-vestibule",
+      "name": "the-garden",
       "prefix": "",
-      "function": "Global config, characters, rules (room 10)"
+      "function": "Estate config, characters, rules, TODO \u2014 the-garden (room 10)"
     }
   ],
   "characters": [

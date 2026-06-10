@@ -1,5 +1,5 @@
 ---
-title: the-vestibule
+title: the-garden
 type: rules
 classification: unclassified
 skin: justice-league
@@ -8,8 +8,8 @@ status: active
 date: {{ cookiecutter.date }}
 ---
 
-# the-vestibule
-*Threshold of {{ cookiecutter.palace_name }}*
+# the-garden
+*Garden of {{ cookiecutter.palace_name }}*
 
 ---
 
@@ -42,13 +42,13 @@ DC maps to the Greek pantheon: archetypes before personalities, principles befor
 | 7 | Billiard Room | brainstorming_billiard_room     | `brainstorming_` | Early ideation, half-formed ideas — generative but not yet ready to surface         |
 | 8 | Ballroom     | pitching_ballroom       | `pitching_`      | External relations, big picture, public-facing — what the world sees  |
 | 9 | Dining Room  | planning_dining_room            | `planning_`      | Origin stories, retrospectives, where the hero came from              |
-| — | Vestibule    | the-vestibule                  | —                | Global config, characters, rules (room 10)                            |
+| — | Vestibule    | the-garden                  | —                | Global config, characters, rules (room 10)                            |
 
 ---
 
 ## To Begin a Session
 
-1. Read `Principles/master_prompt.md`
+1. Read `Rules/master_prompt.md`
 2. Read relevant character card(s) from `Characters/`
 3. Declare your starting room
 4. The DM opens the case
